@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">HW13_11</string>
+    <string name="email">E-mail</string>
+    <string name="inputEmail">Введите свой e-mail</string>
+    <string name="password">Password</string>
+    <string name="inputPassword">Введите свой пароль</string>
+    <string name="agreement">Я принимаю условия пользовательского соглашения</string>
+    <string name="login">Login</string>
+    <string name="login_complete">Login complete</string>
+    <string name="link">Link</string>
+    <string name="incorrect_email">E-mail is incorrect</string>
+    <string name="login_successful">Login successful</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="call">CALL</string>
+    <string name="no_component">No component found</string>
+    <string name="incorrect_number">Phone number is incorrect</string>
+
+</resources>

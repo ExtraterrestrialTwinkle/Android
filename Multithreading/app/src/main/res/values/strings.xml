@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Multithreading</string>
+    <string name="numberOfThreads">Введите количество потоков N</string>
+    <string name="typeM">Введите число М</string>
+    <string name="NoSync">Нет синхронизации</string>
+    <string name="withSync">С синхронизацией</string>
+    <string name="result">Результат</string>
+</resources>

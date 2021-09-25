@@ -1,0 +1,16 @@
+com/smolianinovasiuzanna/hw10_8/GlideApp.java
+ com.smolianinovasiuzanna.hw10_8.GlideApp
+com/smolianinovasiuzanna/hw10_8/GlideRequest.java
+ com.smolianinovasiuzanna.hw10_8.GlideRequest
+com/bumptech/glide/GeneratedRequestManagerFactory.java
+ com.bumptech.glide.GeneratedRequestManagerFactory
+com/bumptech/glide/GeneratedAppGlideModuleImpl.java
+ com.bumptech.glide.GeneratedAppGlideModuleImpl
+com/smolianinovasiuzanna/hw10_8/BuildConfig.java
+ com.smolianinovasiuzanna.hw10_8.BuildConfig
+com/smolianinovasiuzanna/hw10_8/GlideOptions.java
+ com.smolianinovasiuzanna.hw10_8.GlideOptions
+com/smolianinovasiuzanna/hw10_8/databinding/ActivityMainBinding.java
+ com.smolianinovasiuzanna.hw10_8.databinding.ActivityMainBinding
+com/smolianinovasiuzanna/hw10_8/GlideRequests.java
+ com.smolianinovasiuzanna.hw10_8.GlideRequests

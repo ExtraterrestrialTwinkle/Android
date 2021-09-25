@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HW21</string>
+    <string name="enterMovieTitle">Введите название фильма</string>
+    <string name="enterMovieYear">Введите год фильма</string>
+    <string name="chooseType">Выберите тип</string>
+    <string name="search">Поиск</string>
+    <string name="errorRequest">Ошибка запроса</string>
+    <string name="repeatRequest">Повторить запрос</string>
+    <string name="cancelRequest">Отмена</string>
+    <string-array name="types">
+        <item name="movie">Фильм</item>
+        <item name="series">Сериал</item>
+        <item name="episode">Эпизод</item>
+        <item name="noType">Не выбрано</item>
+    </string-array>
+
+</resources>

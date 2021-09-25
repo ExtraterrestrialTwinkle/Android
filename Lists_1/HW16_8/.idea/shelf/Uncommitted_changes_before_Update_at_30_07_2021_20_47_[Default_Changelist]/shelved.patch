@@ -1,0 +1,1361 @@
+Index: ../MyApplication/app/src/main/res/values/colors.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/app/src/main/res/values/colors.xml	(date 1626590375554)
++++ ../MyApplication/app/src/main/res/values/colors.xml	(date 1626590375554)
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <color name="purple_200">#FFBB86FC</color>
++    <color name="purple_500">#FF6200EE</color>
++    <color name="purple_700">#FF3700B3</color>
++    <color name="teal_200">#FF03DAC5</color>
++    <color name="teal_700">#FF018786</color>
++    <color name="black">#FF000000</color>
++    <color name="white">#FFFFFFFF</color>
++</resources>
+\ No newline at end of file
+Index: ../MyApplication/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/build.gradle	(date 1626590374469)
++++ ../MyApplication/build.gradle	(date 1626590374469)
+@@ -0,0 +1,27 @@
++// Top-level build file where you can add configuration options common to all sub-projects/modules.
++buildscript {
++    ext.kotlin_version = "1.5.10"
++    repositories {
++        google()
++        mavenCentral()
++    }
++    dependencies {
++        classpath "com.android.tools.build:gradle:4.2.1"
++        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
++
++        // NOTE: Do not place your application dependencies here; they belong
++        // in the individual module build.gradle files
++    }
++}
++
++allprojects {
++    repositories {
++        google()
++        mavenCentral()
++        jcenter() // Warning: this repository is going to shut down soon
++    }
++}
++
++task clean(type: Delete) {
++    delete rootProject.buildDir
++}
+\ No newline at end of file
+Index: ../MyApplication/app/src/main/res/values-night/themes.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/app/src/main/res/values-night/themes.xml	(date 1626590375571)
++++ ../MyApplication/app/src/main/res/values-night/themes.xml	(date 1626590375571)
+@@ -0,0 +1,16 @@
++<resources xmlns:tools="http://schemas.android.com/tools">
++    <!-- Base application theme. -->
++    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
++        <!-- Primary brand color. -->
++        <item name="colorPrimary">@color/purple_200</item>
++        <item name="colorPrimaryVariant">@color/purple_700</item>
++        <item name="colorOnPrimary">@color/black</item>
++        <!-- Secondary brand color. -->
++        <item name="colorSecondary">@color/teal_200</item>
++        <item name="colorSecondaryVariant">@color/teal_200</item>
++        <item name="colorOnSecondary">@color/black</item>
++        <!-- Status bar color. -->
++        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
++        <!-- Customize your theme here. -->
++    </style>
++</resources>
+\ No newline at end of file
+Index: ../MyApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml	(date 1626590375487)
++++ ../MyApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml	(date 1626590375487)
+@@ -0,0 +1,5 @@
++<?xml version="1.0" encoding="utf-8"?>
++<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
++    <background android:drawable="@drawable/ic_launcher_background" />
++    <foreground android:drawable="@drawable/ic_launcher_foreground" />
++</adaptive-icon>
+\ No newline at end of file
+Index: ../MyApplication/app/src/main/res/values/themes.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/app/src/main/res/values/themes.xml	(date 1626590375519)
++++ ../MyApplication/app/src/main/res/values/themes.xml	(date 1626590375519)
+@@ -0,0 +1,16 @@
++<resources xmlns:tools="http://schemas.android.com/tools">
++    <!-- Base application theme. -->
++    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
++        <!-- Primary brand color. -->
++        <item name="colorPrimary">@color/purple_500</item>
++        <item name="colorPrimaryVariant">@color/purple_700</item>
++        <item name="colorOnPrimary">@color/white</item>
++        <!-- Secondary brand color. -->
++        <item name="colorSecondary">@color/teal_200</item>
++        <item name="colorSecondaryVariant">@color/teal_700</item>
++        <item name="colorOnSecondary">@color/black</item>
++        <!-- Status bar color. -->
++        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
++        <!-- Customize your theme here. -->
++    </style>
++</resources>
+\ No newline at end of file
+Index: ../MyApplication/app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/app/src/main/res/values/strings.xml	(date 1626590798155)
++++ ../MyApplication/app/src/main/res/values/strings.xml	(date 1626590798155)
+@@ -0,0 +1,5 @@
++<resources>
++    <string name="app_name">My Application</string>
++    <string name="input_creators_name">ghghghghg</string>
++    <string name="input_the_number_of_seasons">jhjhjhjhj</string>
++</resources>
+\ No newline at end of file
+Index: ../MyApplication/app/src/main/res/drawable/ic_launcher_background.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/app/src/main/res/drawable/ic_launcher_background.xml	(date 1626590375455)
++++ ../MyApplication/app/src/main/res/drawable/ic_launcher_background.xml	(date 1626590375455)
+@@ -0,0 +1,170 @@
++<?xml version="1.0" encoding="utf-8"?>
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="108dp"
++    android:height="108dp"
++    android:viewportWidth="108"
++    android:viewportHeight="108">
++    <path
++        android:fillColor="#3DDC84"
++        android:pathData="M0,0h108v108h-108z" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M9,0L9,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,0L19,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M29,0L29,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M39,0L39,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M49,0L49,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M59,0L59,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M69,0L69,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M79,0L79,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M89,0L89,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M99,0L99,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,9L108,9"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,19L108,19"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,29L108,29"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,39L108,39"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,49L108,49"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,59L108,59"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,69L108,69"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,79L108,79"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,89L108,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,99L108,99"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,29L89,29"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,39L89,39"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,49L89,49"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,59L89,59"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,69L89,69"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,79L89,79"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M29,19L29,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M39,19L39,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M49,19L49,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M59,19L59,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M69,19L69,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M79,19L79,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++</vector>
+Index: ../MyApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml	(date 1626590375471)
++++ ../MyApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml	(date 1626590375471)
+@@ -0,0 +1,30 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:aapt="http://schemas.android.com/aapt"
++    android:width="108dp"
++    android:height="108dp"
++    android:viewportWidth="108"
++    android:viewportHeight="108">
++    <path android:pathData="M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z">
++        <aapt:attr name="android:fillColor">
++            <gradient
++                android:endX="85.84757"
++                android:endY="92.4963"
++                android:startX="42.9492"
++                android:startY="49.59793"
++                android:type="linear">
++                <item
++                    android:color="#44000000"
++                    android:offset="0.0" />
++                <item
++                    android:color="#00000000"
++                    android:offset="1.0" />
++            </gradient>
++        </aapt:attr>
++    </path>
++    <path
++        android:fillColor="#FFFFFF"
++        android:fillType="nonZero"
++        android:pathData="M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z"
++        android:strokeWidth="1"
++        android:strokeColor="#00000000" />
++</vector>
+\ No newline at end of file
+Index: ../MyApplication/app/src/main/java/com/smolianinovasiuzanna/myapplication/Shows.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/app/src/main/java/com/smolianinovasiuzanna/myapplication/Shows.kt	(date 1626590724025)
++++ ../MyApplication/app/src/main/java/com/smolianinovasiuzanna/myapplication/Shows.kt	(date 1626590724025)
+@@ -0,0 +1,18 @@
++package com.smolianinovasiuzanna.myapplication
++
++sealed class Shows {
++
++    data class Film(
++        val title: String,
++        val year: String,
++        val posterLink: String,
++        val director: String
++    ): Shows()
++
++    data class Series(
++        val title: String,
++        val posterLink: String,
++        val creators: String,
++        val seasons: String
++    ): Shows()
++}
+\ No newline at end of file
+Index: ../MyApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml	(date 1626590375286)
++++ ../MyApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml	(date 1626590375286)
+@@ -0,0 +1,5 @@
++<?xml version="1.0" encoding="utf-8"?>
++<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
++    <background android:drawable="@drawable/ic_launcher_background" />
++    <foreground android:drawable="@drawable/ic_launcher_foreground" />
++</adaptive-icon>
+\ No newline at end of file
+Index: ../MyApplication/app/proguard-rules.pro
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/app/proguard-rules.pro	(date 1626590374783)
++++ ../MyApplication/app/proguard-rules.pro	(date 1626590374783)
+@@ -0,0 +1,21 @@
++# Add project specific ProGuard rules here.
++# You can control the set of applied configuration files using the
++# proguardFiles setting in build.gradle.
++#
++# For more details, see
++#   http://developer.android.com/guide/developing/tools/proguard.html
++
++# If your project uses WebView with JS, uncomment the following
++# and specify the fully qualified class name to the JavaScript interface
++# class:
++#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
++#   public *;
++#}
++
++# Uncomment this to preserve the line number information for
++# debugging stack traces.
++#-keepattributes SourceFile,LineNumberTable
++
++# If you keep the line number information, uncomment this to
++# hide the original source file name.
++#-renamesourcefileattribute SourceFile
+\ No newline at end of file
+Index: ../MyApplication/app/src/test/java/com/smolianinovasiuzanna/myapplication/ExampleUnitTest.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/app/src/test/java/com/smolianinovasiuzanna/myapplication/ExampleUnitTest.kt	(date 1626590375268)
++++ ../MyApplication/app/src/test/java/com/smolianinovasiuzanna/myapplication/ExampleUnitTest.kt	(date 1626590375268)
+@@ -0,0 +1,17 @@
++package com.smolianinovasiuzanna.myapplication
++
++import org.junit.Test
++
++import org.junit.Assert.*
++
++/**
++ * Example local unit test, which will execute on the development machine (host).
++ *
++ * See [testing documentation](http://d.android.com/tools/testing).
++ */
++class ExampleUnitTest {
++    @Test
++    fun addition_isCorrect() {
++        assertEquals(4, 2 + 2)
++    }
++}
+\ No newline at end of file
+Index: ../MyApplication/app/src/androidTest/java/com/smolianinovasiuzanna/myapplication/ExampleInstrumentedTest.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/app/src/androidTest/java/com/smolianinovasiuzanna/myapplication/ExampleInstrumentedTest.kt	(date 1626590375251)
++++ ../MyApplication/app/src/androidTest/java/com/smolianinovasiuzanna/myapplication/ExampleInstrumentedTest.kt	(date 1626590375251)
+@@ -0,0 +1,24 @@
++package com.smolianinovasiuzanna.myapplication
++
++import androidx.test.platform.app.InstrumentationRegistry
++import androidx.test.ext.junit.runners.AndroidJUnit4
++
++import org.junit.Test
++import org.junit.runner.RunWith
++
++import org.junit.Assert.*
++
++/**
++ * Instrumented test, which will execute on an Android device.
++ *
++ * See [testing documentation](http://d.android.com/tools/testing).
++ */
++@RunWith(AndroidJUnit4::class)
++class ExampleInstrumentedTest {
++    @Test
++    fun useAppContext() {
++        // Context of the app under test.
++        val appContext = InstrumentationRegistry.getInstrumentation().targetContext
++        assertEquals("com.smolianinovasiuzanna.myapplication", appContext.packageName)
++    }
++}
+\ No newline at end of file
+Index: ../MyApplication/app/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/app/.gitignore	(date 1626590374676)
++++ ../MyApplication/app/.gitignore	(date 1626590374676)
+@@ -0,0 +1,1 @@
++/build
+\ No newline at end of file
+Index: ../MyApplication/app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/app/src/main/AndroidManifest.xml	(date 1626591113761)
++++ ../MyApplication/app/src/main/AndroidManifest.xml	(date 1626591113761)
+@@ -0,0 +1,27 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="com.smolianinovasiuzanna.myapplication">
++    <uses-permission android:name="android.permission.INTERNET" />
++    <!--
++    Allows Glide to monitor connectivity status and restart failed requests if users go from a
++    a disconnected to a connected network state.
++    -->
++    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
++    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
++    <application
++        android:allowBackup="true"
++        android:icon="@mipmap/ic_launcher"
++        android:label="@string/app_name"
++        android:roundIcon="@mipmap/ic_launcher_round"
++        android:supportsRtl="true"
++        android:theme="@style/Theme.MyApplication">
++        <activity android:name=".MainActivity">
++            <intent-filter>
++                <action android:name="android.intent.action.MAIN" />
++
++                <category android:name="android.intent.category.LAUNCHER" />
++            </intent-filter>
++        </activity>
++    </application>
++
++</manifest>
+\ No newline at end of file
+Index: ../MyApplication/app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/app/build.gradle	(date 1626591130389)
++++ ../MyApplication/app/build.gradle	(date 1626591130389)
+@@ -0,0 +1,52 @@
++plugins {
++    id 'com.android.application'
++    id 'kotlin-android'
++}
++
++android {
++    compileSdkVersion 30
++    buildToolsVersion "30.0.3"
++
++    defaultConfig {
++        applicationId "com.smolianinovasiuzanna.myapplication"
++        minSdkVersion 21
++        targetSdkVersion 30
++        versionCode 1
++        versionName "1.0"
++
++        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
++    }
++    buildFeatures{
++        viewBinding true
++    }
++
++    buildTypes {
++        release {
++            minifyEnabled false
++            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
++        }
++    }
++    compileOptions {
++        sourceCompatibility JavaVersion.VERSION_1_8
++        targetCompatibility JavaVersion.VERSION_1_8
++    }
++    kotlinOptions {
++        jvmTarget = '1.8'
++    }
++}
++
++dependencies {
++
++
++    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
++    implementation 'androidx.core:core-ktx:1.6.0'
++    implementation 'androidx.appcompat:appcompat:1.3.0'
++    implementation 'com.google.android.material:material:1.4.0'
++    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
++    implementation 'androidx.recyclerview:recyclerview:1.2.1'
++    implementation 'com.github.bumptech.glide:glide:4.12.0'
++    implementation 'com.google.android.material:material:1.4.0'
++    testImplementation 'junit:junit:4.+'
++    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
++    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
++}
+\ No newline at end of file
+Index: ../MyApplication/gradlew.bat
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/gradlew.bat	(date 1626590374397)
++++ ../MyApplication/gradlew.bat	(date 1626590374397)
+@@ -0,0 +1,84 @@
++@if "%DEBUG%" == "" @echo off
++@rem ##########################################################################
++@rem
++@rem  Gradle startup script for Windows
++@rem
++@rem ##########################################################################
++
++@rem Set local scope for the variables with windows NT shell
++if "%OS%"=="Windows_NT" setlocal
++
++set DIRNAME=%~dp0
++if "%DIRNAME%" == "" set DIRNAME=.
++set APP_BASE_NAME=%~n0
++set APP_HOME=%DIRNAME%
++
++@rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
++set DEFAULT_JVM_OPTS=
++
++@rem Find java.exe
++if defined JAVA_HOME goto findJavaFromJavaHome
++
++set JAVA_EXE=java.exe
++%JAVA_EXE% -version >NUL 2>&1
++if "%ERRORLEVEL%" == "0" goto init
++
++echo.
++echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
++echo.
++echo Please set the JAVA_HOME variable in your environment to match the
++echo location of your Java installation.
++
++goto fail
++
++:findJavaFromJavaHome
++set JAVA_HOME=%JAVA_HOME:"=%
++set JAVA_EXE=%JAVA_HOME%/bin/java.exe
++
++if exist "%JAVA_EXE%" goto init
++
++echo.
++echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME%
++echo.
++echo Please set the JAVA_HOME variable in your environment to match the
++echo location of your Java installation.
++
++goto fail
++
++:init
++@rem Get command-line arguments, handling Windows variants
++
++if not "%OS%" == "Windows_NT" goto win9xME_args
++
++:win9xME_args
++@rem Slurp the command line arguments.
++set CMD_LINE_ARGS=
++set _SKIP=2
++
++:win9xME_args_slurp
++if "x%~1" == "x" goto execute
++
++set CMD_LINE_ARGS=%*
++
++:execute
++@rem Setup the command line
++
++set CLASSPATH=%APP_HOME%\gradle\wrapper\gradle-wrapper.jar
++
++@rem Execute Gradle
++"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% "-Dorg.gradle.appname=%APP_BASE_NAME%" -classpath "%CLASSPATH%" org.gradle.wrapper.GradleWrapperMain %CMD_LINE_ARGS%
++
++:end
++@rem End local scope for the variables with windows NT shell
++if "%ERRORLEVEL%"=="0" goto mainEnd
++
++:fail
++rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
++rem the _cmd.exe /c_ return code!
++if  not "" == "%GRADLE_EXIT_CONSOLE%" exit 1
++exit /b 1
++
++:mainEnd
++if "%OS%"=="Windows_NT" endlocal
++
++:omega
+Index: ../MyApplication/gradlew
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/gradlew	(date 1626590374393)
++++ ../MyApplication/gradlew	(date 1626590374393)
+@@ -0,0 +1,172 @@
++#!/usr/bin/env sh
++
++##############################################################################
++##
++##  Gradle start up script for UN*X
++##
++##############################################################################
++
++# Attempt to set APP_HOME
++# Resolve links: $0 may be a link
++PRG="$0"
++# Need this for relative symlinks.
++while [ -h "$PRG" ] ; do
++    ls=`ls -ld "$PRG"`
++    link=`expr "$ls" : '.*-> \(.*\)$'`
++    if expr "$link" : '/.*' > /dev/null; then
++        PRG="$link"
++    else
++        PRG=`dirname "$PRG"`"/$link"
++    fi
++done
++SAVED="`pwd`"
++cd "`dirname \"$PRG\"`/" >/dev/null
++APP_HOME="`pwd -P`"
++cd "$SAVED" >/dev/null
++
++APP_NAME="Gradle"
++APP_BASE_NAME=`basename "$0"`
++
++# Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
++DEFAULT_JVM_OPTS=""
++
++# Use the maximum available, or set MAX_FD != -1 to use that value.
++MAX_FD="maximum"
++
++warn () {
++    echo "$*"
++}
++
++die () {
++    echo
++    echo "$*"
++    echo
++    exit 1
++}
++
++# OS specific support (must be 'true' or 'false').
++cygwin=false
++msys=false
++darwin=false
++nonstop=false
++case "`uname`" in
++  CYGWIN* )
++    cygwin=true
++    ;;
++  Darwin* )
++    darwin=true
++    ;;
++  MINGW* )
++    msys=true
++    ;;
++  NONSTOP* )
++    nonstop=true
++    ;;
++esac
++
++CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
++
++# Determine the Java command to use to start the JVM.
++if [ -n "$JAVA_HOME" ] ; then
++    if [ -x "$JAVA_HOME/jre/sh/java" ] ; then
++        # IBM's JDK on AIX uses strange locations for the executables
++        JAVACMD="$JAVA_HOME/jre/sh/java"
++    else
++        JAVACMD="$JAVA_HOME/bin/java"
++    fi
++    if [ ! -x "$JAVACMD" ] ; then
++        die "ERROR: JAVA_HOME is set to an invalid directory: $JAVA_HOME
++
++Please set the JAVA_HOME variable in your environment to match the
++location of your Java installation."
++    fi
++else
++    JAVACMD="java"
++    which java >/dev/null 2>&1 || die "ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
++
++Please set the JAVA_HOME variable in your environment to match the
++location of your Java installation."
++fi
++
++# Increase the maximum file descriptors if we can.
++if [ "$cygwin" = "false" -a "$darwin" = "false" -a "$nonstop" = "false" ] ; then
++    MAX_FD_LIMIT=`ulimit -H -n`
++    if [ $? -eq 0 ] ; then
++        if [ "$MAX_FD" = "maximum" -o "$MAX_FD" = "max" ] ; then
++            MAX_FD="$MAX_FD_LIMIT"
++        fi
++        ulimit -n $MAX_FD
++        if [ $? -ne 0 ] ; then
++            warn "Could not set maximum file descriptor limit: $MAX_FD"
++        fi
++    else
++        warn "Could not query maximum file descriptor limit: $MAX_FD_LIMIT"
++    fi
++fi
++
++# For Darwin, add options to specify how the application appears in the dock
++if $darwin; then
++    GRADLE_OPTS="$GRADLE_OPTS \"-Xdock:name=$APP_NAME\" \"-Xdock:icon=$APP_HOME/media/gradle.icns\""
++fi
++
++# For Cygwin, switch paths to Windows format before running java
++if $cygwin ; then
++    APP_HOME=`cygpath --path --mixed "$APP_HOME"`
++    CLASSPATH=`cygpath --path --mixed "$CLASSPATH"`
++    JAVACMD=`cygpath --unix "$JAVACMD"`
++
++    # We build the pattern for arguments to be converted via cygpath
++    ROOTDIRSRAW=`find -L / -maxdepth 1 -mindepth 1 -type d 2>/dev/null`
++    SEP=""
++    for dir in $ROOTDIRSRAW ; do
++        ROOTDIRS="$ROOTDIRS$SEP$dir"
++        SEP="|"
++    done
++    OURCYGPATTERN="(^($ROOTDIRS))"
++    # Add a user-defined pattern to the cygpath arguments
++    if [ "$GRADLE_CYGPATTERN" != "" ] ; then
++        OURCYGPATTERN="$OURCYGPATTERN|($GRADLE_CYGPATTERN)"
++    fi
++    # Now convert the arguments - kludge to limit ourselves to /bin/sh
++    i=0
++    for arg in "$@" ; do
++        CHECK=`echo "$arg"|egrep -c "$OURCYGPATTERN" -`
++        CHECK2=`echo "$arg"|egrep -c "^-"`                                 ### Determine if an option
++
++        if [ $CHECK -ne 0 ] && [ $CHECK2 -eq 0 ] ; then                    ### Added a condition
++            eval `echo args$i`=`cygpath --path --ignore --mixed "$arg"`
++        else
++            eval `echo args$i`="\"$arg\""
++        fi
++        i=$((i+1))
++    done
++    case $i in
++        (0) set -- ;;
++        (1) set -- "$args0" ;;
++        (2) set -- "$args0" "$args1" ;;
++        (3) set -- "$args0" "$args1" "$args2" ;;
++        (4) set -- "$args0" "$args1" "$args2" "$args3" ;;
++        (5) set -- "$args0" "$args1" "$args2" "$args3" "$args4" ;;
++        (6) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" ;;
++        (7) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" ;;
++        (8) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" "$args7" ;;
++        (9) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" "$args7" "$args8" ;;
++    esac
++fi
++
++# Escape application args
++save () {
++    for i do printf %s\\n "$i" | sed "s/'/'\\\\''/g;1s/^/'/;\$s/\$/' \\\\/" ; done
++    echo " "
++}
++APP_ARGS=$(save "$@")
++
++# Collect all arguments for the java command, following the shell quoting and substitution rules
++eval set -- $DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS "\"-Dorg.gradle.appname=$APP_BASE_NAME\"" -classpath "\"$CLASSPATH\"" org.gradle.wrapper.GradleWrapperMain "$APP_ARGS"
++
++# by default we should be in the correct project dir, but when run from Finder on Mac, the cwd is wrong
++if [ "$(uname)" = "Darwin" ] && [ "$HOME" = "$PWD" ]; then
++  cd "$(dirname "$0")"
++fi
++
++exec "$JAVACMD" "$@"
+Index: ../MyApplication/gradle/wrapper/gradle-wrapper.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1251
+===================================================================
+--- ../MyApplication/gradle/wrapper/gradle-wrapper.properties	(date 1626590376522)
++++ ../MyApplication/gradle/wrapper/gradle-wrapper.properties	(date 1626590376522)
+@@ -0,0 +1,6 @@
++#Sun Jul 18 09:39:36 MSK 2021
++distributionBase=GRADLE_USER_HOME
++distributionUrl=https\://services.gradle.org/distributions/gradle-6.7.1-bin.zip
++distributionPath=wrapper/dists
++zipStorePath=wrapper/dists
++zipStoreBase=GRADLE_USER_HOME
+Index: ../MyApplication/settings.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/settings.gradle	(date 1626590375034)
++++ ../MyApplication/settings.gradle	(date 1626590375034)
+@@ -0,0 +1,2 @@
++rootProject.name = "My Application"
++include ':app'
+Index: ../../Fragments_1/HW14_10/app/src/main/java/Extensions.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.smolianinovasiuzanna.hw14_10\r\n\r\nimport android.os.Bundle\r\nimport androidx.fragment.app.Fragment\r\n\r\nfun <T: Fragment> T.withArguments(action: Bundle.() -> Unit): T {\r\n    return apply {\r\n        val args = Bundle().apply(action)\r\n        arguments = args\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../../Fragments_1/HW14_10/app/src/main/java/Extensions.kt	(revision 51d9d7db895b40afda72e6c6f5459919ec9bad87)
++++ ../../Fragments_1/HW14_10/app/src/main/java/Extensions.kt	(date 1627193247319)
+@@ -1,5 +1,6 @@
+ package com.smolianinovasiuzanna.hw14_10
+ 
++import android.app.Fragment
+ import android.os.Bundle
+ import androidx.fragment.app.Fragment
+ 
+Index: app/src/main/java/com/smolianinovasiuzanna/hw16_8/AddShowDialogFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.smolianinovasiuzanna.hw16_8\r\n\r\nimport android.app.Activity.RESULT_OK\r\nimport android.app.Dialog\r\nimport android.content.Context\r\nimport android.content.DialogInterface\r\nimport android.content.Intent\r\nimport android.net.Uri\r\nimport android.os.Bundle\r\nimport android.provider.MediaStore\r\nimport android.text.Editable\r\nimport android.text.TextWatcher\r\nimport android.util.Log\r\nimport android.view.LayoutInflater\r\nimport android.view.View\r\nimport android.widget.RadioGroup\r\nimport android.widget.Toast\r\nimport androidx.appcompat.app.AlertDialog\r\nimport androidx.core.view.isGone\r\nimport androidx.core.view.isVisible\r\nimport androidx.fragment.app.DialogFragment\r\nimport com.smolianinovasiuzanna.hw16_8.databinding.FragmentDialogBinding\r\n\r\n\r\nclass AddShowDialogFragment: DialogFragment()  {\r\n    private var _binding: FragmentDialogBinding? = null\r\n    private val binding: FragmentDialogBinding get() = _binding!!\r\n\r\n    private var title:String = \"\"\r\n    private var directorOrCreators: String = \"\"\r\n    private var yearOrSeries: String = \"\"\r\n    private var posterUri: String = \"\"\r\n\r\n       override fun onAttach(context: Context) {\r\n        super.onAttach(context)\r\n    }\r\n\r\n        @Throws(IllegalStateException::class)\r\n        override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {\r\n            _binding = FragmentDialogBinding.inflate(LayoutInflater.from(requireContext()))\r\n            return activity?.let {\r\n            val dialog = AlertDialog.Builder(requireContext())\r\n                val inflater = layoutInflater.inflate(R.layout.fragment_dialog, null)\r\n            dialog.setView(inflater)\r\n                .setPositiveButton(\"Add\") { _, _ -> } // дописать код обработки нажатия кнопки Add\r\n                .setNegativeButton(\"Cancel\") { _, _ ->\r\n                    Toast.makeText(context, \"You cancelled adding a show\", Toast.LENGTH_SHORT)\r\n                        .show()\r\n                }\r\n\r\n            binding.chooseShowRadioGroup.setOnCheckedChangeListener{ _, checkedId ->\r\n               when (checkedId) {\r\n                   R.id.radioFilm -> {\r\n                       Toast.makeText(context, \"RadioFilm is clicked\", Toast.LENGTH_SHORT).show()\r\n                       binding.inputShowInfoLayout.isVisible = true\r\n                       addFilm()\r\n                   }\r\n\r\n                   R.id.radioSeries -> {\r\n                       Toast.makeText(context, \"RadioSeries is clicked\", Toast.LENGTH_SHORT).show()\r\n                       binding.inputShowInfoLayout.isVisible = true\r\n                       binding.inputDirectorTextView.text = getString(R.string.input_creators_name)\r\n                       binding.inputYearTextView.text = getString(R.string.input_the_number_of_seasons)\r\n                       addSeries()\r\n                   }\r\n               }\r\n\r\n           }\r\n            dialog.create()\r\n            } ?: throw IllegalStateException(\"Activity cannot be null\")\r\n        }\r\n\r\n\r\n    private fun addFilm(): Shows.Film{\r\n        Log.d(\"addFilm\", \"OK\")\r\n\r\n        binding.titleEditText.addTextChangedListener(object: TextWatcher{\r\n            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {\r\n                TODO(\"Not yet implemented\")\r\n            }\r\n\r\n            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {\r\n                title = binding.titleEditText.text.toString()\r\n\r\n            }\r\n\r\n            override fun afterTextChanged(s: Editable?) {\r\n                TODO(\"Not yet implemented\")\r\n            }\r\n\r\n        })\r\n\r\n        binding.directorEditText.addTextChangedListener(object: TextWatcher{\r\n            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {\r\n                TODO(\"Not yet implemented\")\r\n            }\r\n\r\n            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {\r\n                directorOrCreators = binding.directorEditText.text.toString()\r\n\r\n            }\r\n\r\n            override fun afterTextChanged(s: Editable?) {\r\n                TODO(\"Not yet implemented\")\r\n            }\r\n\r\n        })\r\n        binding.yearEditText.addTextChangedListener(object: TextWatcher{\r\n            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {\r\n                TODO(\"Not yet implemented\")\r\n            }\r\n\r\n            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {\r\n                yearOrSeries = binding.yearEditText.text.toString()\r\n\r\n            }\r\n\r\n            override fun afterTextChanged(s: Editable?) {\r\n                TODO(\"Not yet implemented\")\r\n            }\r\n\r\n        })\r\n        binding.downloadPosterButton.setOnClickListener(object : View.OnClickListener {\r\n            override fun onClick(v: View?) {\r\n                val getIntent = Intent(Intent.ACTION_GET_CONTENT)\r\n                getIntent.type = \"image/*\"\r\n\r\n                val pickIntent =\r\n                    Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)\r\n                pickIntent.type = \"image/*\"\r\n\r\n                val chooserIntent = Intent.createChooser(getIntent, \"Select Image\")\r\n                chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, arrayOf(pickIntent))\r\n\r\n                startActivityForResult(chooserIntent, PICK_IMAGE)\r\n\r\n            }\r\n        })\r\n\r\n        posterUri = binding.uriTextView.text.toString()\r\n       val newFilm = Shows.Film(\r\n            title,\r\n            yearOrSeries,\r\n            posterUri,\r\n            directorOrCreators\r\n        )\r\n        return newFilm\r\n    }\r\n\r\n    private fun addSeries(): Shows.Series{\r\n        Log.d(\"addseries\", \"OK\")\r\n\r\n        binding.titleEditText.addTextChangedListener(object: TextWatcher{\r\n            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {\r\n                TODO(\"Not yet implemented\")\r\n            }\r\n\r\n            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {\r\n                title = binding.titleEditText.text.toString()\r\n                binding.titleEditText.clearFocus()\r\n                binding.titleEditText.isCursorVisible = false\r\n            }\r\n\r\n            override fun afterTextChanged(s: Editable?) {\r\n                TODO(\"Not yet implemented\")\r\n            }\r\n\r\n        })\r\n\r\n        binding.directorEditText.addTextChangedListener(object: TextWatcher{\r\n            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {\r\n                TODO(\"Not yet implemented\")\r\n            }\r\n\r\n            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {\r\n                directorOrCreators = binding.directorEditText.text.toString()\r\n                binding.directorEditText.clearFocus()\r\n                binding.directorEditText.isCursorVisible = false\r\n            }\r\n\r\n            override fun afterTextChanged(s: Editable?) {\r\n                TODO(\"Not yet implemented\")\r\n            }\r\n\r\n        })\r\n        binding.yearEditText.addTextChangedListener(object: TextWatcher{\r\n            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {\r\n                TODO(\"Not yet implemented\")\r\n            }\r\n\r\n            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {\r\n                yearOrSeries = binding.yearEditText.text.toString()\r\n                binding.yearEditText.clearFocus()\r\n                binding.yearEditText.isCursorVisible = false\r\n            }\r\n\r\n            override fun afterTextChanged(s: Editable?) {\r\n                TODO(\"Not yet implemented\")\r\n            }\r\n\r\n        })\r\n        binding.downloadPosterButton.setOnClickListener(object : View.OnClickListener {\r\n            override fun onClick(v: View?) {\r\n                val getIntent = Intent(Intent.ACTION_GET_CONTENT)\r\n                getIntent.type = \"image/*\"\r\n\r\n                val pickIntent =\r\n                    Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)\r\n                pickIntent.type = \"image/*\"\r\n\r\n                val chooserIntent = Intent.createChooser(getIntent, \"Select Image\")\r\n                chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, arrayOf(pickIntent))\r\n\r\n                startActivityForResult(pickIntent, PICK_IMAGE)\r\n\r\n            }\r\n        })\r\n        posterUri = binding.uriTextView.text.toString()\r\n        val newSeries: Shows.Series = Shows.Series(\r\n            title,\r\n            directorOrCreators,\r\n            posterUri,\r\n            yearOrSeries\r\n        )\r\n        return newSeries\r\n    }\r\n\r\n    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {\r\n        super.onActivityResult(requestCode, resultCode, data)\r\n\r\n        when (requestCode) {\r\n            PICK_IMAGE -> if (resultCode == RESULT_OK) {\r\n                val selectedImage: Uri? = data?.data\r\n                binding.uriTextView.text = selectedImage.toString()\r\n                binding.uriTextView.isVisible = true\r\n                binding.downloadPosterButton.isGone = true\r\n\r\n            }\r\n        }\r\n    }\r\n\r\n    override fun onDetach() {\r\n        super.onDetach()\r\n        _binding = null\r\n    }\r\n\r\n    companion object{\r\n        private const val PICK_IMAGE = 1\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/smolianinovasiuzanna/hw16_8/AddShowDialogFragment.kt	(revision 51d9d7db895b40afda72e6c6f5459919ec9bad87)
++++ ../MyApplication/app/src/main/java/com/smolianinovasiuzanna/myapplication/MainActivity.kt	(date 1626591361150)
+@@ -1,4 +1,5 @@
+-package com.smolianinovasiuzanna.hw16_8
++package com.smolianinovasiuzanna.myapplication
++
+ 
+ import android.app.Activity.RESULT_OK
+ import android.app.Dialog
+@@ -16,72 +17,61 @@
+ import android.widget.RadioGroup
+ import android.widget.Toast
+ import androidx.appcompat.app.AlertDialog
++import androidx.appcompat.app.AppCompatActivity
+ import androidx.core.view.isGone
+ import androidx.core.view.isVisible
+ import androidx.fragment.app.DialogFragment
+-import com.smolianinovasiuzanna.hw16_8.databinding.FragmentDialogBinding
++import com.smolianinovasiuzanna.myapplication.databinding.ActivityMainBinding
++
+ 
++class MainActivity : AppCompatActivity(R.layout.activity_main) {
+ 
+-class AddShowDialogFragment: DialogFragment()  {
+-    private var _binding: FragmentDialogBinding? = null
+-    private val binding: FragmentDialogBinding get() = _binding!!
++    private lateinit var binding: ActivityMainBinding
++
+ 
+-    private var title:String = ""
++    private var title: String = ""
+     private var directorOrCreators: String = ""
+     private var yearOrSeries: String = ""
+     private var posterUri: String = ""
+ 
+-       override fun onAttach(context: Context) {
+-        super.onAttach(context)
+-    }
+ 
+-        @Throws(IllegalStateException::class)
+-        override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+-            _binding = FragmentDialogBinding.inflate(LayoutInflater.from(requireContext()))
+-            return activity?.let {
+-            val dialog = AlertDialog.Builder(requireContext())
+-                val inflater = layoutInflater.inflate(R.layout.fragment_dialog, null)
+-            dialog.setView(inflater)
+-                .setPositiveButton("Add") { _, _ -> } // дописать код обработки нажатия кнопки Add
+-                .setNegativeButton("Cancel") { _, _ ->
+-                    Toast.makeText(context, "You cancelled adding a show", Toast.LENGTH_SHORT)
+-                        .show()
+-                }
++    override fun onCreate(savedInstanceState: Bundle?) {
++        super.onCreate(savedInstanceState)
++        binding = ActivityMainBinding.inflate(layoutInflater)
++        setContentView(binding.root)
+ 
+-            binding.chooseShowRadioGroup.setOnCheckedChangeListener{ _, checkedId ->
+-               when (checkedId) {
+-                   R.id.radioFilm -> {
+-                       Toast.makeText(context, "RadioFilm is clicked", Toast.LENGTH_SHORT).show()
+-                       binding.inputShowInfoLayout.isVisible = true
+-                       addFilm()
+-                   }
++        binding.chooseShowRadioGroup.setOnCheckedChangeListener { _, checkedId ->
++            when (checkedId) {
++                R.id.radioFilm -> {
++                    binding.inputShowInfoLayout.isVisible = true
++                    addFilm()}
+ 
+-                   R.id.radioSeries -> {
+-                       Toast.makeText(context, "RadioSeries is clicked", Toast.LENGTH_SHORT).show()
+-                       binding.inputShowInfoLayout.isVisible = true
+-                       binding.inputDirectorTextView.text = getString(R.string.input_creators_name)
+-                       binding.inputYearTextView.text = getString(R.string.input_the_number_of_seasons)
+-                       addSeries()
+-                   }
+-               }
++                R.id.radioSeries -> {
++
++                    binding.inputDirectorTextView.text = getString(R.string.input_creators_name)
++                    binding.inputYearTextView.text = getString(R.string.input_the_number_of_seasons)
++                    addSeries()
++                }
++            }
+ 
+-           }
+-            dialog.create()
+-            } ?: throw IllegalStateException("Activity cannot be null")
+-        }
++        }
++
++
++    }
+ 
+ 
+-    private fun addFilm(): Shows.Film{
++    private fun addFilm(): Shows.Film {
+         Log.d("addFilm", "OK")
+ 
+-        binding.titleEditText.addTextChangedListener(object: TextWatcher{
++        binding.titleEditText.addTextChangedListener(object : TextWatcher {
+             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+                 TODO("Not yet implemented")
+             }
+ 
+             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                 title = binding.titleEditText.text.toString()
+-
++//                binding.titleEditText.clearFocus()
++//                binding.titleEditText.isCursorVisible = false
+             }
+ 
+             override fun afterTextChanged(s: Editable?) {
+@@ -90,14 +80,15 @@
+ 
+         })
+ 
+-        binding.directorEditText.addTextChangedListener(object: TextWatcher{
++        binding.directorEditText.addTextChangedListener(object : TextWatcher {
+             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+                 TODO("Not yet implemented")
+             }
+ 
+             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                 directorOrCreators = binding.directorEditText.text.toString()
+-
++//                binding.directorEditText.clearFocus()
++//                binding.directorEditText.isCursorVisible = false
+             }
+ 
+             override fun afterTextChanged(s: Editable?) {
+@@ -105,14 +96,15 @@
+             }
+ 
+         })
+-        binding.yearEditText.addTextChangedListener(object: TextWatcher{
++        binding.yearEditText.addTextChangedListener(object : TextWatcher {
+             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+                 TODO("Not yet implemented")
+             }
+ 
+             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                 yearOrSeries = binding.yearEditText.text.toString()
+-
++//                binding.yearEditText.clearFocus()
++//                binding.yearEditText.isCursorVisible = false
+             }
+ 
+             override fun afterTextChanged(s: Editable?) {
+@@ -133,12 +125,11 @@
+                 chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, arrayOf(pickIntent))
+ 
+                 startActivityForResult(chooserIntent, PICK_IMAGE)
+-
+-            }
+-        })
+-
+-        posterUri = binding.uriTextView.text.toString()
+-       val newFilm = Shows.Film(
++                posterUri = binding.uriTextView.text.toString()
++            }
++        })
++
++        val newFilm = Shows.Film(
+             title,
+             yearOrSeries,
+             posterUri,
+@@ -147,10 +138,15 @@
+         return newFilm
+     }
+ 
+-    private fun addSeries(): Shows.Series{
++    private fun addSeries(): Shows.Series {
+         Log.d("addseries", "OK")
+ 
+-        binding.titleEditText.addTextChangedListener(object: TextWatcher{
++        binding.inputShowInfoLayout.isVisible = true
++        binding.inputDirectorTextView.text = getString(R.string.input_creators_name)
++        binding.inputYearTextView.text = getString(R.string.input_the_number_of_seasons)
++        val button = binding.downloadPosterButton
++
++        binding.titleEditText.addTextChangedListener(object : TextWatcher {
+             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+                 TODO("Not yet implemented")
+             }
+@@ -167,7 +163,7 @@
+ 
+         })
+ 
+-        binding.directorEditText.addTextChangedListener(object: TextWatcher{
++        binding.directorEditText.addTextChangedListener(object : TextWatcher {
+             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+                 TODO("Not yet implemented")
+             }
+@@ -183,7 +179,7 @@
+             }
+ 
+         })
+-        binding.yearEditText.addTextChangedListener(object: TextWatcher{
++        binding.yearEditText.addTextChangedListener(object : TextWatcher {
+             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+                 TODO("Not yet implemented")
+             }
+@@ -199,7 +195,7 @@
+             }
+ 
+         })
+-        binding.downloadPosterButton.setOnClickListener(object : View.OnClickListener {
++        button.setOnClickListener(object : View.OnClickListener {
+             override fun onClick(v: View?) {
+                 val getIntent = Intent(Intent.ACTION_GET_CONTENT)
+                 getIntent.type = "image/*"
+@@ -213,9 +209,10 @@
+ 
+                 startActivityForResult(pickIntent, PICK_IMAGE)
+ 
+-            }
+-        })
+-        posterUri = binding.uriTextView.text.toString()
++                posterUri = binding.uriTextView.text.toString()
++            }
++        })
++
+         val newSeries: Shows.Series = Shows.Series(
+             title,
+             directorOrCreators,
+@@ -225,6 +222,7 @@
+         return newSeries
+     }
+ 
++
+     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+         super.onActivityResult(requestCode, resultCode, data)
+ 
+@@ -232,20 +230,17 @@
+             PICK_IMAGE -> if (resultCode == RESULT_OK) {
+                 val selectedImage: Uri? = data?.data
+                 binding.uriTextView.text = selectedImage.toString()
+-                binding.uriTextView.isVisible = true
+-                binding.downloadPosterButton.isGone = true
++                binding.uriTextView.isVisible
++                binding.downloadPosterButton.isGone
+ 
+             }
+         }
+     }
+ 
+-    override fun onDetach() {
+-        super.onDetach()
+-        _binding = null
+-    }
++
+ 
+-    companion object{
++    companion object {
+         private const val PICK_IMAGE = 1
+     }
+-
+ }
++
+Index: ../MyApplication/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/.gitignore	(date 1626590374331)
++++ ../MyApplication/.gitignore	(date 1626590374331)
+@@ -0,0 +1,15 @@
++*.iml
++.gradle
++/local.properties
++/.idea/caches
++/.idea/libraries
++/.idea/modules.xml
++/.idea/workspace.xml
++/.idea/navEditor.xml
++/.idea/assetWizardSettings.xml
++.DS_Store
++/build
++/captures
++.externalNativeBuild
++.cxx
++local.properties
+Index: ../MyApplication/app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication/app/src/main/res/layout/activity_main.xml	(date 1626591278803)
++++ ../MyApplication/app/src/main/res/layout/activity_main.xml	(date 1626591278803)
+@@ -0,0 +1,131 @@
++<?xml version="1.0" encoding="utf-8"?>
++<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:id="@+id/addShowDialog"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:background="#FFFFCBD4"
++    android:orientation="vertical"
++    android:padding="8dp">
++
++    <LinearLayout
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:orientation="horizontal">
++
++<!--        <ImageView-->
++<!--            android:layout_width="50dp"-->
++<!--            android:layout_height="50dp"-->
++<!--            android:contentDescription="film"-->
++<!--            android:src="@drawable/ic_launcher_background" />-->
++
++        <TextView
++            android:layout_width="wrap_content"
++            android:layout_height="match_parent"
++            android:text="add_show"
++            android:textSize="20sp"
++
++            android:layout_marginStart="16dp"
++            android:layout_marginEnd="16dp"/>
++
++    </LinearLayout>
++
++    <RadioGroup
++        android:id="@+id/chooseShowRadioGroup"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:background="#FFFFCBD4"
++        android:layout_margin="8dp">
++
++        <RadioButton
++            android:id="@+id/radioFilm"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:layout_marginTop="8dp"
++            android:layout_marginStart="8dp"
++            android:layout_weight="1"
++            android:text="film"/>
++
++        <RadioButton
++            android:id="@+id/radioSeries"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:layout_marginTop="8dp"
++            android:layout_marginStart="8dp"
++            android:layout_marginBottom="8dp"
++            android:layout_weight="1"
++            android:text="series"/>
++
++    </RadioGroup>
++
++    <LinearLayout
++        android:id="@+id/inputShowInfoLayout"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:orientation="vertical"
++        android:visibility="gone"
++        tools:visibility="visible">
++
++        <TextView
++            android:id="@+id/inputTitleTextView"
++            android:layout_width="wrap_content"
++            android:layout_height="match_parent"
++            android:text="input_title"
++            android:textSize="16sp" />
++
++        <EditText
++            android:id="@+id/titleEditText"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:hint="input_title" />
++
++        <TextView
++            android:id="@+id/inputDirectorTextView"
++            android:layout_width="wrap_content"
++            android:layout_height="match_parent"
++            android:text="input_director_s_name"
++            android:textSize="16sp" />
++
++        <EditText
++            android:id="@+id/directorEditText"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:hint="input_director_s_name" />
++
++        <TextView
++            android:id="@+id/inputYearTextView"
++            android:layout_width="wrap_content"
++            android:layout_height="match_parent"
++            android:text="input_the_year_of_release"
++            android:textSize="16sp" />
++
++        <EditText
++            android:id="@+id/yearEditText"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:hint="input_the_year_of_release" />
++
++        <TextView
++            android:id="@+id/inputPosterTextView"
++            android:layout_width="wrap_content"
++            android:layout_height="match_parent"
++            android:text="choose_the_poster_image_from_gallery"
++            android:textSize="16sp" />
++
++        <Button
++            android:id="@+id/downloadPosterButton"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_gravity="center_horizontal"
++            android:text="get image" />
++
++        <TextView
++            android:id="@+id/uriTextView"
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:visibility="gone"
++            tools:visibility="visible" />
++
++    </LinearLayout>
++
++</LinearLayout>
+\ No newline at end of file
+Index: ../MyApplication/gradle.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1251
+===================================================================
+--- ../MyApplication/gradle.properties	(date 1626590374486)
++++ ../MyApplication/gradle.properties	(date 1626590374486)
+@@ -0,0 +1,19 @@
++# Project-wide Gradle settings.
++# IDE (e.g. Android Studio) users:
++# Gradle settings configured through the IDE *will override*
++# any settings specified in this file.
++# For more details on how to configure your build environment visit
++# http://www.gradle.org/docs/current/userguide/build_environment.html
++# Specifies the JVM arguments used for the daemon process.
++# The setting is particularly useful for tweaking memory settings.
++org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8
++# When configured, Gradle will run in incubating parallel mode.
++# This option should only be used with decoupled projects. More details, visit
++# http://www.gradle.org/docs/current/userguide/multi_project_builds.html#sec:decoupled_projects
++# org.gradle.parallel=true
++# AndroidX package structure to make it clearer which packages are bundled with the
++# Android operating system, and which are packaged with your app"s APK
++# https://developer.android.com/topic/libraries/support-library/androidx-rn
++android.useAndroidX=true
++# Kotlin code style for this project: "official" or "obsolete":
++kotlin.code.style=official
+\ No newline at end of file
+diff --git ../../Intents/MyApplication2/app/src/main/java/com/example/myapplication2/LoginActivity.kt ../../Intents/MyApplication2/app/src/main/java/com/example/myapplication2/LoginActivity.kt
+new file mode 100644
+diff --git ../../Intents/MyApplication2/app/src/main/res/layout/activity_login.xml ../../Intents/MyApplication2/app/src/main/res/layout/activity_login.xml
+new file mode 100644

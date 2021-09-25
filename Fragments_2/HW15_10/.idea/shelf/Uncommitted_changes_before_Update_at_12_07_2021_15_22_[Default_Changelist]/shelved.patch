@@ -1,0 +1,21 @@
+Index: ../../Fragments_1/HW14_10/app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\r\n    id 'com.android.application'\r\n    id 'kotlin-android'\r\n    id 'kotlin-kapt'\r\n    id 'kotlin-parcelize'\r\n    }\r\n\r\nandroid {\r\n    compileSdkVersion 30\r\n    buildToolsVersion \"30.0.3\"\r\n\r\n    defaultConfig {\r\n        applicationId \"com.smolianinovasiuzanna.hw14_10\"\r\n        minSdkVersion 21\r\n        targetSdkVersion 30\r\n        versionCode 1\r\n        versionName \"1.0\"\r\n\r\n        testInstrumentationRunner \"androidx.test.runner.AndroidJUnitRunner\"\r\n    }\r\n\r\n    buildFeatures {\r\n        viewBinding true\r\n    }\r\n\r\n    buildTypes {\r\n        release {\r\n            minifyEnabled false\r\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'\r\n        }\r\n    }\r\n    compileOptions {\r\n        sourceCompatibility JavaVersion.VERSION_1_8\r\n        targetCompatibility JavaVersion.VERSION_1_8\r\n    }\r\n    kotlinOptions {\r\n        jvmTarget = '1.8'\r\n    }\r\n}\r\n\r\ndependencies {\r\n    \r\n    implementation fileTree(dir: 'libs', include: ['*.jar'])\r\n    implementation \"org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version\"\r\n    implementation 'androidx.core:core-ktx:1.2.0'\r\n    implementation 'androidx.appcompat:appcompat:1.1.0'\r\n    implementation 'com.google.android.material:material:1.3.0'\r\n    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'\r\n    testImplementation 'junit:junit:4.12'\r\n    androidTestImplementation 'androidx.test.ext:junit:1.1.2'\r\n    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'\r\n    implementation 'com.github.bumptech.glide:glide:4.12.0'\r\n    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'\r\n    implementation 'com.afollestad:vvalidator:0.2.2'\r\n    def nav_version = \"2.3.5\"\r\n\r\n    // Java language implementation\r\n    implementation(\"androidx.navigation:navigation-fragment:$nav_version\")\r\n    implementation(\"androidx.navigation:navigation-ui:$nav_version\")\r\n\r\n    // Kotlin\r\n    implementation(\"androidx.navigation:navigation-fragment-ktx:$nav_version\")\r\n    implementation(\"androidx.navigation:navigation-ui-ktx:$nav_version\")\r\n\r\n    // Feature module Support\r\n    implementation(\"androidx.navigation:navigation-dynamic-features-fragment:$nav_version\")\r\n\r\n    // Testing Navigation\r\n    androidTestImplementation(\"androidx.navigation:navigation-testing:$nav_version\")\r\n\r\n    // Jetpack Compose Integration\r\n    implementation(\"androidx.navigation:navigation-compose:2.4.0-alpha02\")\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../../Fragments_1/HW14_10/app/build.gradle	(revision ff2634fe1903f3dc92a9172408ca990af81f5ddd)
++++ ../../Fragments_1/HW14_10/app/build.gradle	(date 1624951900385)
+@@ -52,6 +52,7 @@
+     implementation 'com.github.bumptech.glide:glide:4.12.0'
+     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+     implementation 'com.afollestad:vvalidator:0.2.2'
++    implementation 'com.google.android.material:material:1.3.0'
+     def nav_version = "2.3.5"
+ 
+     // Java language implementation
+diff --git ../../Intents/MyApplication2/app/src/main/res/layout/activity_login.xml ../../Intents/MyApplication2/app/src/main/res/layout/activity_login.xml
+new file mode 100644
+diff --git ../../Intents/MyApplication2/app/src/main/java/com/example/myapplication2/LoginActivity.kt ../../Intents/MyApplication2/app/src/main/java/com/example/myapplication2/LoginActivity.kt
+new file mode 100644

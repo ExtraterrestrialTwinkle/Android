@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">HW16_8</string>
+    <string name="the_shawshenk_redemption">The Shawshenk Redemption</string>
+    <string name="frank_darabont">Frank Darabont</string>
+    <string name="the_godfather">The Godfather</string>
+    <string name="francis_ford_coppola">Francis Ford Coppola</string>
+    <string name="the_dark_knight">The Dark Knight</string>
+    <string name="christopher_nolan">Christopher Nolan</string>
+    <string name="schindlers_list">Schindlers List</string>
+    <string name="steven_spielberg">Steven Spielberg</string>
+    <string name="pulp_fiction">Pulp Fiction</string>
+    <string name="quentin_tarantino">Quentin Tarantino</string>
+    <string name="the_walking_dead">The Walking Dead</string>
+    <string name="the_walking_dead_creators">Frank Darabont /n Angela Kang</string>
+    <string name="friends">Friends</string>
+    <string name="friends_creators">David Crane /n Marta Kauffman</string>
+    <string name="greys_anatomy">Greys Anatomy</string>
+    <string name="greys_anatomy_creators">Shonda Rhimes</string>
+    <string name="house_m_d">House M.D.</string>
+    <string name="house_m_d_creators">David Shore</string>
+    <string name="bones">Bones</string>
+    <string name="bones_creators">Hart Hanson</string>
+    <string name="the_show_list_is_empty">The Show List Is Empty!</string>
+    <string name="add_show">Add show:</string>
+    <string name="film">Film</string>
+    <string name="series">Series</string>
+    <string name="input_title">Input title</string>
+    <string name="input_director_s_name">Input directors name</string>
+    <string name="input_the_year_of_release">Input the year of release</string>
+    <string name="input_creators_name">Input creators name</string>
+    <string name="input_the_number_of_seasons">Input the number of seasons</string>
+    <string name="choose_the_poster_image_from_gallery">Choose the poster image from gallery</string>
+    <string name="get_image">get image</string>
+
+
+</resources>

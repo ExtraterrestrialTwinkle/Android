@@ -1,0 +1,152 @@
+<resources>
+    <string name="app_name">HW19</string>
+    <string name="list_of_shows">List of Shows</string>
+    <string name="the_shawshenk_redemption">The Shawshenk Redemption</string>
+    <string name="frank_darabont">Frank Darabont</string>
+    <string name="the_godfather">The Godfather</string>
+    <string name="francis_ford_coppola">Francis Ford Coppola</string>
+    <string name="the_dark_knight">The Dark Knight</string>
+    <string name="christopher_nolan">Christopher Nolan</string>
+    <string name="schindlers_list">Schindlers List</string>
+    <string name="steven_spielberg">Steven Spielberg</string>
+    <string name="pulp_fiction">Pulp Fiction</string>
+    <string name="quentin_tarantino">Quentin Tarantino</string>
+    <string name="the_walking_dead">The Walking Dead</string>
+    <string name="the_walking_dead_creators">Frank Darabont /n Angela Kang</string>
+    <string name="friends">Friends</string>
+    <string name="friends_creators">David Crane /n Marta Kauffman</string>
+    <string name="greys_anatomy">Greys Anatomy</string>
+    <string name="greys_anatomy_creators">Shonda Rhimes</string>
+    <string name="house_m_d">House M.D.</string>
+    <string name="house_m_d_creators">David Shore</string>
+    <string name="bones">Bones</string>
+    <string name="bones_creators">Hart Hanson</string>
+    <string name="the_show_list_is_empty">The Show List Is Empty!</string>
+    <string name="add_show">Add show:</string>
+    <string name="film">Film</string>
+    <string name="series">Series</string>
+    <string name="input_title">Input title</string>
+    <string name="input_director_s_name">Input directors name</string>
+    <string name="input_the_year_of_release">Input the year of release</string>
+    <string name="input_creators_name">Input creators name</string>
+    <string name="input_the_number_of_seasons">Input the number of seasons</string>
+    <string name="choose_the_poster_image_from_gallery">Choose the poster image from gallery</string>
+    <string name="get_image">get image</string>
+
+    <string name="shawshenkLink">https://movieposters2.com/images/1374353-b.jpg</string>
+    <string name="godfatherLink">https://movieposters2.com/images/694423-b.jpg</string>
+    <string name="darkknightLink">https://movieposters2.com/images/653694-b.jpg</string>
+    <string name="schindlerLink">https://movieposters2.com/images/657002-b.jpg</string>
+    <string name="pulpLink">https://movieposters2.com/images/739665-b.jpg</string>
+    <string name="walkingLink">https://movieposters2.com/images/1148244-b.jpg</string>
+    <string name="friendsLink">https://movieposters2.com/images/645471-b.jpg</string>
+    <string name="greyLink">https://movieposters2.com/images/1199467-b.jpg</string>
+    <string name="houseLink">https://movieposters2.com/images/646575-b.jpg</string>
+    <string name="bonesLink">https://movieposters2.com/images/648896-b.jpg</string>
+
+    <string-array name="shawshenk_actors">
+        <item>Tim Robbins</item>
+        <item>Morgan Freeman</item>
+        <item>Bob Gunton</item></string-array>
+    <string-array name="godfather_actors">
+        <item>Marlon Brando</item>
+        <item>Al Pachino</item>
+        <item>James Caan</item></string-array>
+    <string-array name="dark_knight_actors">
+        <item>Christian Bale</item>
+        <item>Heath Ledger</item>
+        <item>Aaron Eckhart</item></string-array>
+    <string-array name="schindler_actors">
+        <item>Liam Neeson</item>
+        <item>Ralph Fiennes</item>
+        <item>Ben Kingsley</item></string-array>
+    <string-array name="pulp_fiction_actors">
+        <item>John Travolta</item>
+        <item>Uma Thurman</item>
+        <item>Samuel L. Jackson</item></string-array>
+    <string-array name="walking_dead_actors">
+        <item>Andrew Lincoln</item>
+        <item>Norman Reeds</item>
+        <item>Melissa McBride</item>
+        <item>Lauren Cohan</item>
+        <item>Josh McDermitt</item></string-array>
+    <string-array name="friends_actors">
+        <item>Jennifer Aniston</item>
+        <item>Courteney Cox</item>
+        <item>Lisa Kudrow</item>
+        <item>Matt LeBlank</item>
+        <item>Mattew Perry</item>
+        <item>David Schwimmer</item></string-array>
+    <string-array name="greys_anatomy_actors">
+        <item>Ellen Pompeo</item>
+        <item>Chandra Wilson</item>
+        <item>James Pickens Jr.</item>
+        <item>Justin Chambers</item>
+        <item>Patrick Dempsey</item>
+        <item>Sandra Oh</item></string-array>
+    <string-array name="house_actors">
+        <item>Hugh Laurie</item>
+        <item>Omar Epps</item>
+        <item>Robert Sean Leonard</item>
+        <item>Jesse Spencer</item>
+        <item>Lisa Edelstein</item></string-array>
+    <string-array name="bones_actors">
+        <item>Emily Deschanel</item>
+        <item>David Boreanaz</item>
+        <item>Michaela Conlin</item>
+        <item>T.J. Thyne</item>
+        <item>Tamara Taylor</item></string-array>
+    <string-array name="shawshenk_photos">
+        <item>https://media.gettyimages.com/photos/tim-robbins-attends-the-dark-waters-new-york-premiere-at-walter-reade-picture-id1187249903?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/actor-morgan-freeman-attends-the-premiere-of-focus-features-london-picture-id513221788?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/bob-gunton-during-dallas-362-los-angeles-premiere-arrivals-at-the-in-picture-id105836854?s=2048x2048</item></string-array>
+    <string-array name="godfather_photos">
+        <item>https://media.gettyimages.com/photos/marlon-brando-holding-a-cat-in-a-scene-from-the-film-the-godfather-picture-id121648301?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/receipient-of-the-2001-cecil-b-demille-award-al-pachino-at-the-58th-picture-id2247802?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/portrait-of-american-actor-james-caan-new-york-new-york-october-1971-picture-id532614365?s=2048x2048</item></string-array>
+    <string-array name="dark_knight_photos">
+        <item>https://media.gettyimages.com/photos/christian-bale-attends-the-premiere-of-foxs-ford-v-ferrari-at-tcl-picture-id1185569988?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/heath-ledger-picture-id79724305?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/actor-aaron-eckhart-from-rabbit-hole-poses-for-a-portrait-during-the-picture-id104083503?s=2048x2048</item></string-array>
+    <string-array name="schindler_photos">
+        <item>https://media.gettyimages.com/photos/actor-liam-neeson-poses-next-to-the-beach-closet-dedicated-to-him-on-picture-id151432044?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/actor-ralph-fiennes-at-the-cinemerit-gala-for-ralph-fiennes-during-picture-id1159446417?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/actor-sir-ben-kingsley-arrives-at-the-28th-annual-palm-springs-film-picture-id630832548?s=2048x2048</item></string-array>
+    <string-array name="pulp_fiction_photos">
+        <item>https://media.gettyimages.com/photos/actor-john-travolta-attends-the-22nd-annual-critics-choice-awards-at-picture-id629180288?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/portrait-of-american-fashion-model-and-film-actress-uma-thurman-as-picture-id81542102?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/samuel-l-jackson-attends-the-gq-men-of-the-year-awards-at-the-royal-picture-id454518754?s=2048x2048</item></string-array>
+    <string-array name="walking_dead_photos">
+        <item>https://media.gettyimages.com/photos/actor-andrew-lincoln-attends-the-season-six-premiere-of-the-walking-picture-id492059376?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/norman-reeds-speaks-onstage-at-the-2015-american-music-awards-at-on-picture-id498385218?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/melissa-mcbride-attends-the-walking-dead-panel-during-2019-comiccon-picture-id1163063367?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/actress-lauren-cohan-attends-the-season-5-premiere-of-the-walking-at-picture-id456559580?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/josh-mcdermitt-attends-the-amc-survival-sunday-the-walking-deadfear-picture-id946704610?s=2048x2048</item></string-array>
+    <string-array name="friends_photos">
+        <item>https://media.gettyimages.com/photos/promotional-portrait-of-american-actor-jennifer-aniston-for-the-c-picture-id1548094?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/actor-courteney-cox-at-ucla-institute-of-the-environment-and-for-a-picture-id653063124?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/pictured-lisa-kudrow-as-phoebe-buffay-picture-id143479380?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/actor-matt-leblanc-from-the-new-show-joey-arrives-for-the-nbc-tca-all-picture-id51050614?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/studio-60-on-the-sunset-strip-session-pasadena-calif-pictured-mattew-picture-id138362074?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/david-schwimmer-attends-the-rape-foundation-annual-brunch-2019-at-a-picture-id1174188962?s=2048x2048</item></string-array>
+    <string-array name="greys_anatomy_photos">
+        <item>https://media.gettyimages.com/photos/actress-ellen-pompeo-arrives-at-the-glsen-respect-awards-at-the-picture-id1052565876?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/s-greys-anatomy-stars-chandra-wilson-as-miranda-bailey-picture-id1177799418?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/actor-james-pickens-jr-attends-artists-for-a-new-south-africa-20th-picture-id91031065?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/justin-chambers-stars-as-alex-karev-on-greys-anatomy-on-the-walt-picture-id93764872?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/patrick-dempsey-arrives-for-the-20th-gq-men-of-the-year-award-at-on-picture-id1059191538?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/haunt-you-every-day-its-halloween-and-the-day-is-full-of-surprises-picture-id93763085?s=2048x2048</item></string-array>
+    <string-array name="house_photos">
+        <item>https://media.gettyimages.com/photos/actor-hugh-laurie-arrives-at-the-63rd-annual-primetime-emmy-awards-picture-id125595517?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/actor-omar-epps-poses-for-a-portrait-at-the-getty-images-portrait-picture-id452760938?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/robert-sean-leonard-during-details-magazine-hosts-chelsea-walls-and-picture-id109546878?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/actor-jesse-spencer-arrives-at-day-2-of-the-nbcuniversal-2015-press-picture-id461657120?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/actress-lisa-edelstein-attends-the-girlfriends-guide-to-divorce-new-picture-id459336102?s=2048x2048</item></string-array>
+    <string-array name="bones_photos">
+        <item>https://media.gettyimages.com/photos/emily-deschanel-attends-the-premiere-of-apple-tvs-mythic-quest-ravens-picture-id1202880433?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/david-boreanaz-attends-the-premiere-of-cirque-du-soleils-volta-at-picture-id1201115972?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/actress-michaela-conlin-attends-the-art-of-elysium-heaven-gala-2011-picture-id108067083?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/thyne-returns-as-dr-jack-hodgins-the-ninth-season-of-bones-premieres-picture-id180433967?s=2048x2048</item>
+        <item>https://media.gettyimages.com/photos/tamara-taylor-during-20052006-upn-prime-time-upfront-at-madison-in-picture-id115382778?s=2048x2048</item></string-array>
+
+    </resources>

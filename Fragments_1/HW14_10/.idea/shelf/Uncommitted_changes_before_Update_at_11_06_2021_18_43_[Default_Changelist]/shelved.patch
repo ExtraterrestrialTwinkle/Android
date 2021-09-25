@@ -1,0 +1,26 @@
+Index: ../../Intents/HW13_11/app/src/main/java/com/smolianinovasiuzanna/hw13_11/LoginActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.smolianinovasiuzanna.hw13_11.com.smolianinovasiuzanna.hw13_11\r\n\r\nimport android.content.Intent\r\nimport android.net.Uri\r\nimport android.os.Build\r\nimport android.os.Bundle\r\nimport android.util.Log\r\nimport android.util.Patterns\r\nimport android.widget.Toast\r\nimport androidx.activity.invoke\r\nimport androidx.activity.result.contract.ActivityResultContracts\r\nimport androidx.appcompat.app.AppCompatActivity\r\nimport com.smolianinovasiuzanna.hw13_11.BuildConfig\r\nimport com.smolianinovasiuzanna.hw13_11.R\r\nimport com.smolianinovasiuzanna.hw13_11.databinding.ActivityLoginBinding\r\n\r\nclass LoginActivity : AppCompatActivity(R.layout.activity_login) {\r\n\r\n    private lateinit var binding: ActivityLoginBinding\r\n\r\n    private val launcherCall = prepareCall(ActivityResultContracts.Dial()) {isTelephone ->\r\n       binding.contactTextView.text = isTelephone.toString()\r\n\r\n    }\r\n\r\n    override fun onCreate(savedInstanceState: Bundle?) {\r\n        super.onCreate(savedInstanceState)\r\n        binding = ActivityLoginBinding.inflate(layoutInflater)\r\n        setContentView(binding.root)\r\n        Log.d(tag, \"onCreate\")\r\n\r\n                binding.dialButton.setOnClickListener {\r\n            val isPhoneNumberValid = Patterns.PHONE\r\n                .matcher(binding.dialEditText.text.toString()).matches()\r\n\r\n            if (!isPhoneNumberValid) {\r\n                toast(R.string.incorrect_number)\r\n            } else {\r\n                Log.d(tag, \"dialButton listener is on\")\r\n                takeResult()\r\n\r\n            }\r\n        }\r\n    }\r\n\r\n       private fun takeResult() {\r\n\r\n\r\n        val dialIntent = Intent(Intent.ACTION_CALL)\r\n\r\n          if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP_MR1) {\r\n               dialIntent.setPackage(\"com.android.phone\")\r\n           }else{\r\n               dialIntent.setPackage(\"com.android.server.telecom\")\r\n           }\r\n           dialIntent.data = Uri.parse(\"tel:\" + binding.dialEditText.text.toString())\r\n\r\n        //if (dialIntent.resolveActivity(packageManager) != null) {\r\n            launcherCall(binding.dialEditText.text.toString())\r\n            Log.d(tag, \"dialIntent is on\" )\r\n       // } else {\r\n       //     toast(R.string.no_component)\r\n       //     Log.d(tag, \"dialIntent is off\")\r\n       // }\r\n        }\r\n\r\n   // private val getContact = registerForActivityResult(DialContract()) { str: Int? ->\r\n    //    binding.contactTextView.text = str.toString()\r\n   // }\r\n\r\n\r\n    private fun toast(text: Int) {\r\n        Toast.makeText(\r\n            this@LoginActivity,\r\n            text,\r\n            Toast.LENGTH_SHORT\r\n        ).show()\r\n    }\r\n\r\n\r\n    private val tag = \"LoginActivity\"\r\n    object DebugLogger {\r\n        fun d(tag: String, message: String) {\r\n            if (BuildConfig.DEBUG)\r\n                Log.v(tag, message)\r\n            Log.d(tag, message)\r\n            Log.i(tag, message)\r\n            Log.e(tag, message)\r\n        }\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../../Intents/HW13_11/app/src/main/java/com/smolianinovasiuzanna/hw13_11/LoginActivity.kt	(revision 2f4278620720dba1fc74227e3a50a6b2e3bd37a5)
++++ ../../Intents/HW13_11/app/src/main/java/com/smolianinovasiuzanna/hw13_11/LoginActivity.kt	(date 1622725168919)
+@@ -18,10 +18,10 @@
+ 
+     private lateinit var binding: ActivityLoginBinding
+ 
+-    private val launcherCall = prepareCall(ActivityResultContracts.Dial()) {isTelephone ->
++   private val launcherCall = prepareCall(ActivityResultContracts.Dial()) {isTelephone ->
+        binding.contactTextView.text = isTelephone.toString()
+ 
+-    }
++   }
+ 
+     override fun onCreate(savedInstanceState: Bundle?) {
+         super.onCreate(savedInstanceState)
+diff --git ../../Intents/MyApplication2/app/src/main/res/layout/activity_login.xml ../../Intents/MyApplication2/app/src/main/res/layout/activity_login.xml
+new file mode 100644
+diff --git ../../Intents/MyApplication2/app/src/main/java/com/example/myapplication2/LoginActivity.kt ../../Intents/MyApplication2/app/src/main/java/com/example/myapplication2/LoginActivity.kt
+new file mode 100644

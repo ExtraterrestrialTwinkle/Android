@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="78154b7e-a717-40b3-a496-6d9d089bc510" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Intents/MyApplication2/app/src/main/java/com/example/myapplication2/LoginActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Intents/MyApplication2/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinBasic/01_BasicSyntax/hw2_8/app/src/main/java/com/smolianinovasiuzanna/hw2_8/xxx.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/androidTest/java/com/smolianinovasiuzanna/myapplication/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/java/com/smolianinovasiuzanna/myapplication/Shows.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/app/src/test/java/com/smolianinovasiuzanna/myapplication/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyApplication/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/HW17/app/src/androidTest/java/com/smolianinovasiuzanna/hw17/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/HW17/app/src/test/java/com/smolianinovasiuzanna/hw17/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/androidTest/java/com/smolianinovasiuzanna/myapplication/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/java/com/smolianinovasiuzanna/myapplication/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/java/com/smolianinovasiuzanna/myapplication/ddd.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/res/layout/employee_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/app/src/test/java/com/smolianinovasiuzanna/myapplication/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lists_2/myapp/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PermissionsAndDate/HW18/app/src/androidTest/java/com/smolianinovasiuzanna/hw18/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PermissionsAndDate/HW18/app/src/test/java/com/smolianinovasiuzanna/hw18/ExampleUnitTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fragments_1/HW14_10/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Fragments_1/HW14_10/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fragments_1/HW14_10/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Fragments_1/HW14_10/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KotlinBasic/01_BasicSyntax/hw2_8/app/src/main/java/com/smolianinovasiuzanna/hw2_8/hw2_8.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../KotlinBasic/01_BasicSyntax/hw2_8/app/src/main/java/com/smolianinovasiuzanna/hw2_8/hw2_8.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PermissionsAndDate/HW18/app/src/main/java/com/smolianinovasiuzanna/hw18/LocationInfoAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../PermissionsAndDate/HW18/app/src/main/java/com/smolianinovasiuzanna/hw18/LocationInfoAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PermissionsAndDate/HW18/app/src/main/java/com/smolianinovasiuzanna/hw18/LocationInfoFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../PermissionsAndDate/HW18/app/src/main/java/com/smolianinovasiuzanna/hw18/LocationInfoFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PermissionsAndDate/HW18/app/src/main/res/layout/fragment_location_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PermissionsAndDate/HW18/app/src/main/res/layout/fragment_location_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PermissionsAndDate/HW18/app/src/main/res/layout/item_location.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PermissionsAndDate/HW18/app/src/main/res/layout/item_location.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1wqtUGguviG4bHoxGkU8TCbHHsU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="78154b7e-a717-40b3-a496-6d9d089bc510" name="Default Changelist" comment="" />
+      <created>1629197960315</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1629197960315</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

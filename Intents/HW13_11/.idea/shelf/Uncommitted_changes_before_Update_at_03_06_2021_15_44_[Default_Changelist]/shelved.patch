@@ -1,0 +1,217 @@
+Index: ../../ViewAndLayout/HW10_8/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// Top-level build file where you can add configuration options common to all sub-projects/modules.\r\nbuildscript {\r\n    ext.kotlin_version = \"1.4.32\"\r\n    repositories {\r\n        google()\r\n        jcenter()\r\n    }\r\n    dependencies {\r\n        classpath \"com.android.tools.build:gradle:4.1.3\"\r\n        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\r\n\r\n        // NOTE: Do not place your application dependencies here; they belong\r\n        // in the individual module build.gradle files\r\n    }\r\n}\r\n\r\nallprojects {\r\n    repositories {\r\n        google()\r\n        jcenter()\r\n        mavenCentral()\r\n        maven { url 'https://maven.google.com' }\r\n    }\r\n}\r\n\r\ntask clean(type: Delete) {\r\n    delete rootProject.buildDir\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../../ViewAndLayout/HW10_8/build.gradle	(revision 3f1cdf6bb8a21a3c1448a308fa328bcab776595d)
++++ ../../ViewAndLayout/HW10_8/build.gradle	(date 1622056639149)
+@@ -6,7 +6,7 @@
+         jcenter()
+     }
+     dependencies {
+-        classpath "com.android.tools.build:gradle:4.1.3"
++        classpath 'com.android.tools.build:gradle:4.2.1'
+         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+ 
+         // NOTE: Do not place your application dependencies here; they belong
+Index: ../../ActivityLifecycle/HW12_12/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// Top-level build file where you can add configuration options common to all sub-projects/modules.\r\nbuildscript {\r\n    ext.kotlin_version = \"1.4.32\"\r\n    repositories {\r\n        google()\r\n        jcenter()\r\n    }\r\n    dependencies {\r\n        classpath \"com.android.tools.build:gradle:4.1.3\"\r\n        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\r\n\r\n        // NOTE: Do not place your application dependencies here; they belong\r\n        // in the individual module build.gradle files\r\n    }\r\n}\r\n\r\nallprojects {\r\n    repositories {\r\n        google()\r\n        jcenter()\r\n        mavenCentral()\r\n        maven { url 'https://maven.google.com' }\r\n    }\r\n}\r\n\r\ntask clean(type: Delete) {\r\n    delete rootProject.buildDir\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../../ActivityLifecycle/HW12_12/build.gradle	(revision 3f1cdf6bb8a21a3c1448a308fa328bcab776595d)
++++ ../../ActivityLifecycle/HW12_12/build.gradle	(date 1622374431667)
+@@ -6,7 +6,7 @@
+         jcenter()
+     }
+     dependencies {
+-        classpath "com.android.tools.build:gradle:4.1.3"
++        classpath 'com.android.tools.build:gradle:4.2.1'
+         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+ 
+         // NOTE: Do not place your application dependencies here; they belong
+Index: ../MyApplication2/app/src/main/res/layout/activity_login.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication2/app/src/main/res/layout/activity_login.xml	(date 1622722909163)
++++ ../MyApplication2/app/src/main/res/layout/activity_login.xml	(date 1622722909163)
+@@ -0,0 +1,47 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    xmlns:tool="http://schemas.android.com/tools">
++
++
++
++    <EditText
++        android:id="@+id/dialEditText"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_marginTop="24dp"
++        android:gravity="center"
++        android:textSize="24sp"
++        android:hint="enter_phone_number"
++        app:layout_constraintTop_toTopOf="parent"
++        android:inputType="phone" />
++
++    <Button
++        android:id="@+id/dialButton"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginTop="24dp"
++        android:gravity="center_horizontal"
++        android:text="call"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.501"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@id/dialEditText"
++        app:layout_constraintVertical_bias="0.10" />
++
++    <TextView
++        android:id="@+id/contactTextView"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginTop="124dp"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.489"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@id/dialButton"
++        tool:text="1234567890" />
++
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: ../MyApplication2/app/src/main/java/com/example/myapplication2/LoginActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../MyApplication2/app/src/main/java/com/example/myapplication2/LoginActivity.kt	(date 1622723904585)
++++ ../MyApplication2/app/src/main/java/com/example/myapplication2/LoginActivity.kt	(date 1622723904585)
+@@ -0,0 +1,87 @@
++package com.example.myapplication2
++
++import android.content.Intent
++import android.net.Uri
++import android.os.Build
++import android.os.Bundle
++import android.util.Log
++import android.util.Patterns
++import android.widget.Toast
++import androidx.activity.invoke
++import androidx.activity.result.contract.ActivityResultContracts
++import androidx.appcompat.app.AppCompatActivity
++import com.example.myapplication2.BuildConfig
++import com.example.myapplication2.R
++import com.example.myapplication2.databinding.ActivityLoginBinding
++
++class LoginActivity : AppCompatActivity(R.layout.activity_login) {
++
++    private lateinit var binding: ActivityLoginBinding
++
++    private val launcherCall = prepareCall(ActivityResultContracts.Dial()) { isTel ->
++        binding.contactTextView.text = isTel.toString()
++
++    }
++
++    override fun onCreate(savedInstanceState: Bundle?) {
++        super.onCreate(savedInstanceState)
++        binding = ActivityLoginBinding.inflate(layoutInflater)
++        setContentView(binding.root)
++        Log.d(tag, "onCreate")
++
++        binding.dialButton.setOnClickListener {
++            val isPhoneNumberValid = Patterns.PHONE
++                .matcher(binding.dialEditText.text.toString()).matches()
++
++            if (!isPhoneNumberValid) {
++                toast("Incorrect_number")
++            } else {
++                Log.d(tag, "dialButton listener is on")
++                takeResult()
++
++            }
++        }
++    }
++
++    private fun takeResult() {
++
++
++        val dialIntent = Intent(Intent.ACTION_DIAL)
++
++        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP_MR1) {
++            dialIntent.setPackage("com.android.phone")
++        }else{
++            dialIntent.setPackage("com.android.server.telecom")
++        }
++        dialIntent.data = Uri.parse("tel."+ binding.dialEditText.text.toString())
++
++            // if (dialIntent.resolveActivity(packageManager) != null) {
++            launcherCall(binding.dialEditText.text.toString())
++        //Log.d(tag, "dialIntent is on" )
++       // } else
++         //   toast("no_component")
++       // Log.d(tag, "dialIntent is off")
++
++    }
++
++        private fun toast(text: String) {
++        Toast.makeText(
++            this@LoginActivity,
++            text,
++            Toast.LENGTH_SHORT
++        ).show()
++    }
++
++
++    private val tag = "LoginActivity"
++    object DebugLogger {
++        fun d(tag: String, message: String) {
++            if (BuildConfig.DEBUG)
++                Log.v(tag, message)
++            Log.d(tag, message)
++            Log.i(tag, message)
++            Log.e(tag, message)
++        }
++    }
++
++}
+Index: ../../ViewAndLayout/HW10_8/gradle/wrapper/gradle-wrapper.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#Tue Apr 27 14:45:41 AZT 2021\r\ndistributionBase=GRADLE_USER_HOME\r\ndistributionPath=wrapper/dists\r\nzipStoreBase=GRADLE_USER_HOME\r\nzipStorePath=wrapper/dists\r\ndistributionUrl=https\\://services.gradle.org/distributions/gradle-6.5-bin.zip\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1251
+===================================================================
+--- ../../ViewAndLayout/HW10_8/gradle/wrapper/gradle-wrapper.properties	(revision 3f1cdf6bb8a21a3c1448a308fa328bcab776595d)
++++ ../../ViewAndLayout/HW10_8/gradle/wrapper/gradle-wrapper.properties	(date 1622056639073)
+@@ -3,4 +3,4 @@
+ distributionPath=wrapper/dists
+ zipStoreBase=GRADLE_USER_HOME
+ zipStorePath=wrapper/dists
+-distributionUrl=https\://services.gradle.org/distributions/gradle-6.5-bin.zip
++distributionUrl=https\://services.gradle.org/distributions/gradle-6.7.1-bin.zip
+Index: ../../ActivityLifecycle/HW12_12/gradle/wrapper/gradle-wrapper.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#Tue Apr 27 14:45:41 AZT 2021\r\ndistributionBase=GRADLE_USER_HOME\r\ndistributionPath=wrapper/dists\r\nzipStoreBase=GRADLE_USER_HOME\r\nzipStorePath=wrapper/dists\r\ndistributionUrl=https\\://services.gradle.org/distributions/gradle-6.5-bin.zip\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1251
+===================================================================
+--- ../../ActivityLifecycle/HW12_12/gradle/wrapper/gradle-wrapper.properties	(revision 3f1cdf6bb8a21a3c1448a308fa328bcab776595d)
++++ ../../ActivityLifecycle/HW12_12/gradle/wrapper/gradle-wrapper.properties	(date 1622374431626)
+@@ -3,4 +3,4 @@
+ distributionPath=wrapper/dists
+ zipStoreBase=GRADLE_USER_HOME
+ zipStorePath=wrapper/dists
+-distributionUrl=https\://services.gradle.org/distributions/gradle-6.5-bin.zip
++distributionUrl=https\://services.gradle.org/distributions/gradle-6.7.1-bin.zip

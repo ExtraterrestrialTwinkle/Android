@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/AD/Desktop/skillbox/android_basic/android_basic/PermissionsAndDate/application/app/src/main/res/layout/activity_main.xml" value="0.13645833333333332" />
+        <entry key="..\:/Users/AD/Desktop/skillbox/android_basic/android_basic/PermissionsAndDate/application/app/src/main/res/layout/fragment_actors.xml" value="0.15208333333333332" />
+        <entry key="..\:/Users/AD/Desktop/skillbox/android_basic/android_basic/PermissionsAndDate/application/app/src/main/res/layout/fragment_dialog.xml" value="0.17889492753623187" />
+        <entry key="..\:/Users/AD/Desktop/skillbox/android_basic/android_basic/PermissionsAndDate/application/app/src/main/res/layout/fragment_list.xml" value="0.10520833333333333" />
+        <entry key="..\:/Users/AD/Desktop/skillbox/android_basic/android_basic/PermissionsAndDate/application/app/src/main/res/layout/fragment_shows.xml" value="0.15208333333333332" />
+        <entry key="..\:/Users/AD/Desktop/skillbox/android_basic/android_basic/PermissionsAndDate/application/app/src/main/res/layout/item_actors.xml" value="0.17889492753623187" />
+        <entry key="..\:/Users/AD/Desktop/skillbox/android_basic/android_basic/ViewModelAndNavigation/application/app/src/main/res/layout/fragment_actors.xml" value="0.15534420289855072" />
+        <entry key="..\:/Users/AD/Desktop/skillbox/android_basic/android_basic/ViewModelAndNavigation/application/app/src/main/res/layout/item_actors.xml" value="0.15534420289855072" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

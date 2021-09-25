@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HW11_4</string>
+    <string name="email">E-mail</string>
+    <string name="inputEmail">Введите свой e-mail</string>
+    <string name="password">Password</string>
+    <string name="inputPassword">Введите свой пароль</string>
+    <string name="agreement">Я принимаю условия пользовательского соглашения</string>
+    <string name="login">Login</string>
+    <string name="login_complete">Login complete</string>
+    <string name="anr">ANR</string>
+    <string name="incorrect">E-mail is incorrect</string>
+
+</resources>

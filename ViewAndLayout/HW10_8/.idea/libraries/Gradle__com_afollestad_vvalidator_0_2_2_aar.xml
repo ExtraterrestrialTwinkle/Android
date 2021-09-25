@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.afollestad:vvalidator:0.2.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/721c0b149779f0936519b3c098e36273/jetified-vvalidator-0.2.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/02e083ed19d330785b762eef8c965b0e/jetified-vvalidator-0.2.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/02e083ed19d330785b762eef8c965b0e/jetified-vvalidator-0.2.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/02e083ed19d330785b762eef8c965b0e/jetified-vvalidator-0.2.2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.afollestad/vvalidator/0.2.2/d64a7472b87660d0fa1ea9cf6db6936e14309c96/vvalidator-0.2.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.afollestad/vvalidator/0.2.2/fe166f86addfcca4493bb0cf56d9c10391bc3631/vvalidator-0.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
