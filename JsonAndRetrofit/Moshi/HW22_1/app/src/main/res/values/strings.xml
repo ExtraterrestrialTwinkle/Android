@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HW21</string>
+    <string name="enterMovieTitle">Введите название фильма</string>
+    <string name="search">Поиск</string>
+    <string name="errorRequest">Ошибка запроса</string>
+    <string name="repeatRequest">Повторить запрос</string>
+    <string name="cancelRequest">Отмена</string>
+
+
+</resources>

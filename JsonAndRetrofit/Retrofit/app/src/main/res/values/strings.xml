@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Github</string>
+    <string name="main_profile">Профиль</string>
+    <string name="main_repositories">Список репозиториев</string>
+    <string name="auth_login">Войти</string>
+    <string name="auth_canceled">Аутентификация не выполнена</string>
+    <string name="to_repositories">repositories</string>
+    <string name="to_detail">detail info</string>
+    <string name="show_starred_repositories">Show starred repositories</string>
+</resources>
