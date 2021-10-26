@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HW24</string>
+    <string name="input_link">Введите ссылку</string>
+    <string name="download">Скачать</string>
+    <string name="download_is_successful">Файл успешно загружен</string>
+    <string name="error">Ошибка!</string>
+    <string name="file_exists">Файл уже существует!</string>
+</resources>
