@@ -102,12 +102,14 @@ class DetailContactInfoFragment: Fragment(R.layout.fragment_detail_contact_info)
     }
 
     private fun showContactDetailInfo(contact: Contact){
-        Log.d("DetailFragment", "showContactDetailInfo")
+        Log.d("DetailFragment", "showContactDetailInfo. Contact = $contact, phones = ${contact.phoneNumbers}, emails = ${contact.emails}")
         with(binding){
             nameTextView.text = contact.name
-            numberTextView.text = contact.phoneNumbers?.printString()
-            if(contact.emails != null){emailText.isVisible = true} else {emailText.isGone = true}
-            emailTextView.text = contact.emails?.printString()
+            numberTextView.text = contact.phoneNumbers.printString()
+            if(contact.emails != emptyList<String>()) {
+                emailText.isVisible = true
+            } else { emailText.isGone = true}
+            emailTextView.text = contact.emails.printString()
         }
     }
 

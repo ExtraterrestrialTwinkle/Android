@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isGone
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -24,8 +25,8 @@ class AddContactFragment: Fragment(R.layout.fragment_add_contact) {
         get() = (activity as MainActivity).contactsViewModel
 
     private var name: String by Delegates.notNull<String>()
-    private var phoneNumbers = mutableListOf<String>()
-    private var emails = mutableListOf<String>()
+    private var phoneNumbers = arrayListOf<String>()
+    private var emails = arrayListOf<String>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -59,6 +60,14 @@ class AddContactFragment: Fragment(R.layout.fragment_add_contact) {
             addEmailButton.setOnClickListener {
                 addAnotherEmailAddress()
             }
+
+            removeAddingPhoneButton.setOnClickListener {
+                removePhoneField()
+            }
+
+            removeAddingEmailButton.setOnClickListener {
+                removeEmailField()
+            }
         }
     }
 
@@ -67,17 +76,17 @@ class AddContactFragment: Fragment(R.layout.fragment_add_contact) {
             name = nameEditText.text.toString()
             val number1 = phoneEditText.text.toString()
             phoneNumbers.add(number1)
-            val number2 = anotherPhoneEditText.text?.toString()
-            if (number2 !=null){
+            val number2 = anotherPhoneEditText.text.toString()
+            if (number2.isBlank().not()){
                 phoneNumbers.add(number2)
             }
             val email1 = emailEditText.text?.toString()
-            val email2 = emailEditText.text?.toString()
-            if (email1 != null){
-                emails.add(email1)
+            val email2 = anotherEmailEditText.text?.toString()
+            if (email1.isNullOrBlank().not()){
+                emails.add(email1!!)
             }
-            if (email2 != null){
-                emails.add(email2)
+            if (email2.isNullOrBlank()){
+                emails.add(email2!!)
             }
         }
         validateFormData(name, phoneNumbers)
@@ -94,6 +103,20 @@ class AddContactFragment: Fragment(R.layout.fragment_add_contact) {
     private fun addAnotherEmailAddress() {
         with(binding) {
             anotherEmailTextField.isVisible = true
+        }
+    }
+
+    private fun removePhoneField(){
+        with(binding){
+            anotherPhoneTextField.isGone = true
+            anotherPhoneEditText.text?.clear()
+        }
+    }
+
+    private fun removeEmailField(){
+        with(binding){
+            anotherEmailTextField.isGone = true
+            anotherEmailEditText.text?.clear()
         }
     }
 

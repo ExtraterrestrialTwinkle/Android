@@ -1,13 +1,17 @@
 package com.smolianinovasiuzanna.hw25.ui.model
 
 import android.app.Application
+import android.os.Build
 import android.util.Log
+import androidx.annotation.RequiresApi
 import androidx.lifecycle.*
 import com.smolianinovasiuzanna.hw25.data.ContactsRepository
 import com.smolianinovasiuzanna.hw25.data.Contact
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
+import java.util.ArrayList
 
 class ContactsViewModel(application: Application): AndroidViewModel(application) {
 
@@ -33,12 +37,27 @@ class ContactsViewModel(application: Application): AndroidViewModel(application)
 
     fun loadContactsList(){
         Log.d("ContactsViewModel", "loadContactsList")
-        scope.launch(Dispatchers.IO + errorHandler){
-            var contactsList = listOf<Contact>()
-            launch{
-                contactsList = repository.getAllContacts()
+        scope.launch {
+            var contacts = listOf<Contact>()
+            launch {
+                val contactsListAsync = async { repository.getAllContacts() }
+                val contactNumbersAsync = async { repository.getPhoneNumbers() }
+                val contactEmailAsync = async { repository.getEmails() }
+
+                contacts = contactsListAsync.await()
+                val contactNumbers = contactNumbersAsync.await()
+                val contactEmails = contactEmailAsync.await()
+
+                contacts.forEach { contact ->
+                    contactNumbers[contact.id]?.let{ numbers ->
+                        contact.phoneNumbers = numbers
+                    }
+                    contactEmails[contact.id]?.let { emails ->
+                        contact.emails = emails
+                    }
+                }
             }.join()
-            contactsLiveData.postValue(contactsList)
+            contactsLiveData.postValue(contacts)
         }
     }
 
@@ -47,22 +66,23 @@ class ContactsViewModel(application: Application): AndroidViewModel(application)
         try {
             val contact = repository.getDetailContactInfo(contactId)
             detailInfoLiveData.postValue(contact)
-        }catch(t: Throwable) {errorLiveData.postValue(t.message)}
+        } catch(t: Throwable) {errorLiveData.postValue(t.message)}
     }
 
+    @RequiresApi(Build.VERSION_CODES.N)
     fun deleteContact(contactId: Long){
         Log.d("viewModel","deleteContact")
         scope.launch(Dispatchers.IO + errorHandler){
-            contactsLiveData.postValue(repository.deleteContact(contactId))
+            val contactsList = repository.deleteContact(contactId)
+            contactsLiveData.postValue(contactsList)
         }
     }
 
-    fun addContact(name: String, phones: List<String>, emails: List<String>){
+    fun addContact(name: String, phones: ArrayList<String>, emails: ArrayList<String>){
         Log.d("ViewModel", "addContact")
-
         scope.launch(Dispatchers.IO + errorHandler){
-            val contact = repository.addContact(name, phones, emails)
-            contactsLiveData.postValue(contact)
+            val newContacts = repository.addContact(name, phones, emails)
+            contactsLiveData.postValue(newContacts)
         }
     }
 }
