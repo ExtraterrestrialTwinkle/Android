@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HW25</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contacts_list">Список контактов</string>
+    <string name="contact_permission_denied">Чтение контактов запрещено</string>
+    <string name="permission_denied_never_ask_again">Для продолжения
+        работы разрешите чтение контактов в настройках приложения</string>
+    <string name="error">Ошибка!</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="email">Электронная почта</string>
+    <string name="delete_contact">Удалить контакт</string>
+    <string name="add_contact_name">Имя (обязательно для заполнения)</string>
+    <string name="add_new_contact">Добавление нового контакта</string>
+    <string name="add_phone_number">Телефон (обязательно для заполнения)</string>
+    <string name="add_email">Email</string>
+    <string name="add">Добавить</string>
+</resources>
