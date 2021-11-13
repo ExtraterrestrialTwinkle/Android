@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:name=".MyApplication"
@@ -22,6 +23,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:authorities="com.smolianinovasiuzanna.hw25.provider"
+            android:name="com.smolianinovasiuzanna.hw25.custom_content_provider.CourseContentProvider"
+            android:exported="true">
+        </provider>
+
+        <provider
+            android:authorities="${applicationId}.fileProvider"
+            android:name=".custom_content_provider.CourseContentProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/downloaded_files"/>
+        </provider>
+
+
     </application>
 
 </manifest>

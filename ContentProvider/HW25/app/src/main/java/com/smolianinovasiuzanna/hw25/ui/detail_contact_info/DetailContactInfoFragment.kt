@@ -1,6 +1,7 @@
 package com.smolianinovasiuzanna.hw25.ui.detail_contact_info
 
 import android.app.AlertDialog
+import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -9,6 +10,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
@@ -16,7 +18,6 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.smolianinovasiuzanna.hw25.R
 import com.smolianinovasiuzanna.hw25.data.Contact
-import com.smolianinovasiuzanna.hw25.data.PermissionType
 import com.smolianinovasiuzanna.hw25.databinding.FragmentDetailContactInfoBinding
 import com.smolianinovasiuzanna.hw25.printString
 import com.smolianinovasiuzanna.hw25.ui.MainActivity
@@ -75,7 +76,7 @@ class DetailContactInfoFragment: Fragment(R.layout.fragment_detail_contact_info)
         Log.d("ContactsFragment", "onContactPermissionDenied")
         Toast.makeText(
             requireContext(),
-            R.string.contact_permission_denied,
+            R.string.contact_permission_denied_read,
             Toast.LENGTH_SHORT
         ).show()
     }
@@ -84,7 +85,7 @@ class DetailContactInfoFragment: Fragment(R.layout.fragment_detail_contact_info)
         Log.d("ContactsFragment", "onContactPermissionNeverAskAgain")
         Toast.makeText(
             requireContext(),
-            R.string.permission_denied_never_ask_again,
+            R.string.permission_denied_write_never_ask_again,
             Toast.LENGTH_SHORT
         ).show()
     }
@@ -125,6 +126,7 @@ class DetailContactInfoFragment: Fragment(R.layout.fragment_detail_contact_info)
             .show()
     }
 
+    @RequiresApi(Build.VERSION_CODES.N)
     private fun deleteContact(contactId: Long){
         viewModel.deleteContact(contactId)
         findNavController().popBackStack()

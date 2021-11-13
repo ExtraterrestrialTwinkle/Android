@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="add_course">Добавить курс</string>
+    <string name="delete_all_courses">Удалить все курсы</string>
+    <string name="error">Ошибка!</string>
+    <string name="no_courses">No Courses!</string>
+</resources>

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/contactsFragment">
+    app:startDestination="@id/navigationFragment">
 
     <fragment
         android:id="@+id/contactsFragment"
@@ -30,4 +30,21 @@
         android:id="@+id/addContactFragment"
         android:name="com.smolianinovasiuzanna.hw25.ui.add_contact.AddContactFragment"
         android:label="AddContactFragment" />
+    <fragment
+        android:id="@+id/navigationFragment"
+        android:name="com.smolianinovasiuzanna.hw25.ui.NavigationFragment"
+        android:label="fragment_navigation"
+        tools:layout="@layout/fragment_navigation" >
+        <action
+            android:id="@+id/action_navigationFragment_to_contactsFragment"
+            app:destination="@id/contactsFragment" />
+        <action
+            android:id="@+id/action_navigationFragment_to_shareFilesFragment"
+            app:destination="@id/shareFilesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shareFilesFragment"
+        android:name="com.smolianinovasiuzanna.hw25.share_files.ShareFilesFragment"
+        android:label="fragment_share_files"
+        tools:layout="@layout/fragment_share_files" />
 </navigation>

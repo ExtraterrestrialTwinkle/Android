@@ -61,6 +61,7 @@ class ContactsFragment : Fragment(R.layout.fragment_contacts) {
             addItemDecoration(DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL))
         }
     }
+
     private fun openContact(contactId: Long){
         findNavController().navigate(
             ContactsFragmentDirections.actionContactsFragmentToDetailContactInfoFragment(contactId))
@@ -122,18 +123,26 @@ class ContactsFragment : Fragment(R.layout.fragment_contacts) {
 
     private fun onContactPermissionDenied(permissionType: PermissionType){
         Log.d("ContactsFragment", "onContactPermissionDenied")
+        val string  = when(permissionType){
+            PermissionType.TYPE_WRITE_CONTACTS ->  R.string.contact_permission_denied_read
+            PermissionType.TYPE_READ_CONTACTS ->  R.string.contact_permission_denied_write
+        }
         Toast.makeText(
             requireContext(),
-            R.string.contact_permission_denied,
+            string,
             Toast.LENGTH_SHORT
         ).show()
     }
 
     private fun onContactPermissionNeverAskAgain(permissionType: PermissionType){
         Log.d("ContactsFragment", "onContactPermissionNeverAskAgain")
+        val string  = when(permissionType){
+            PermissionType.TYPE_WRITE_CONTACTS ->  R.string.permission_denied_read_never_ask_again
+            PermissionType.TYPE_READ_CONTACTS ->  R.string.permission_denied_write_never_ask_again
+        }
         Toast.makeText(
             requireContext(),
-            R.string.permission_denied_never_ask_again,
+            string,
             Toast.LENGTH_SHORT
         ).show()
     }

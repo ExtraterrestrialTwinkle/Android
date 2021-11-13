@@ -153,10 +153,6 @@ class ContactsRepository(private val context: Context) {
             if (emails.isNotEmpty()){
                 saveContactEmail(contactId, emails)
             }
-            val newContact = Contact(contactId, name)
-            Log.d("Contact list before adding","size = ${contactList.size}")
-            contactList.add(newContact)
-            Log.d("Contact list after adding","size = ${contactList.size}")
             contactList.sortedBy { it.name }
         }
     }
