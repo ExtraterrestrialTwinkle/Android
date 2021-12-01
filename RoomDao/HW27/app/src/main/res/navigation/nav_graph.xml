@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.smolianinovasiuzanna.hw27.ui.title.TitleFragment"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_titleFragment_to_contarctorsFragment"
+            app:destination="@id/contarctorsFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_departmentsFragment"
+            app:destination="@id/departmentsFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_employeesFragment"
+            app:destination="@id/employeesFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_projectsFragment"
+            app:destination="@id/projectsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contarctorsFragment"
+        android:name="com.smolianinovasiuzanna.hw27.ui.entities.contractors.ContractorsFragment"
+        android:label="fragment_contarctors"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_contarctorsFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_contarctorsFragment_to_contractsFragment"
+            app:destination="@id/contractsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/departmentsFragment"
+        android:name="com.smolianinovasiuzanna.hw27.ui.entities.departments.DepartmentsFragment"
+        android:label="fragment_departments"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_departmentsFragment_to_addDepartmentFragment"
+            app:destination="@id/addDepartmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeesFragment"
+        android:name="com.smolianinovasiuzanna.hw27.ui.entities.employees.EmployeesFragment"
+        android:label="fragment_employees"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_employeesFragment_to_addEmployeeFragment"
+            app:destination="@id/addEmployeeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.smolianinovasiuzanna.hw27.ui.adding.add_contractor.AddContractorFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/addDepartmentFragment"
+        android:name="com.smolianinovasiuzanna.hw27.ui.adding.add_department.AddDepartmentFragment"
+        android:label="fragment_add_department"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/addEmployeeFragment"
+        android:name="com.smolianinovasiuzanna.hw27.ui.adding.add_employee.AddEmployeeFragment"
+        android:label="fragment_add_employee"
+        tools:layout="@layout/fragment_add_employee" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_addEmployeeFragment_to_workspaceFragment"
+            app:destination="@id/workspaceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contractsFragment"
+        android:name="com.smolianinovasiuzanna.hw27.ui.entities.contracts.ContractsFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_contractsFragment_to_addContractFragment"
+            app:destination="@id/addContractFragment" >
+            <argument
+                android:name="id"
+                android:defaultValue="0" />
+            <argument
+                android:name="contractorId"
+                android:defaultValue="0" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/addContractFragment"
+        android:name="com.smolianinovasiuzanna.hw27.ui.adding.add_contract.AddContractFragment"
+        android:label="fragment_add_contract"
+        tools:layout="@layout/fragment_add" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="contractorId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/projectsFragment"
+        android:name="com.smolianinovasiuzanna.hw27.ui.entities.projects.ProjectsFragment"
+        android:label="fragment_projects"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_projectsFragment_to_addProjectFragment"
+            app:destination="@id/addProjectFragment" />
+        <action
+            android:id="@+id/action_projectsFragment_to_projectInfoFragment"
+            app:destination="@id/projectInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addProjectFragment"
+        android:name="com.smolianinovasiuzanna.hw27.ui.adding.add_project.AddProjectFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add_project" />
+    <fragment
+        android:id="@+id/projectInfoFragment"
+        android:name="com.smolianinovasiuzanna.hw27.ui.project_info.ProjectInfoFragment"
+        android:label="fragment_project_info"
+        tools:layout="@layout/fragment_project_info" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_projectInfoFragment_to_addTaskFragment"
+            app:destination="@id/addTaskFragment" />
+        <action
+            android:id="@+id/action_projectInfoFragment_to_taskInfoFragment"
+            app:destination="@id/taskInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="com.smolianinovasiuzanna.hw27.ui.adding.add_task.AddTaskFragment"
+        android:label="fragment_add_task"
+        tools:layout="@layout/fragment_add_task" >
+        <argument
+            android:name="projectId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskInfoFragment"
+        android:name="com.smolianinovasiuzanna.hw27.ui.task_info.TaskInfoFragment"
+        android:label="fragment_task_info"
+        tools:layout="@layout/fragment_task_info" >
+        <argument
+            android:name="taskId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/workspaceFragment"
+        android:name="com.smolianinovasiuzanna.hw27.ui.adding.workspace.WorkspaceFragment"
+        android:label="WorkspaceFragment" >
+        <argument
+            android:name="employeeId"
+            app:argType="integer" />
+    </fragment>
+</navigation>

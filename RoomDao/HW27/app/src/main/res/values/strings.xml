@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">HW27</string>
+    <string name="contractors">Contractors</string>
+    <string name="departments">Departments</string>
+    <string name="employees">Employees</string>
+    <string name="projects">Проекты</string>
+    <string name="database_for_something_plant">Database for Something Plant</string>
+    <string name="add_contractor">Добавьте заказчика</string>
+    <string name="add_department">Добавьте подразделение</string>
+    <string name="title_name">Наименование</string>
+    <string name="ok">ОК</string>
+    <string name="add_error_incorrect_format">Данные введены неверно!</string>
+    <string name="name">Имя</string>
+    <string name="last_name">Фамилия</string>
+    <string name="age">Возраст</string>
+    <string name="add_employee">Добавьте сотрудника</string>
+    <string name="contracts">Контракты заказчика</string>
+    <string name="title">Наименование</string>
+    <string name="duration">Длительность, дни</string>
+    <string name="contract_price">Сумма контракта, тыс.руб</string>
+    <string name="chooseStatus">Выберите статус</string>
+    <string name="phone_number">Телефон</string>
+    <string name="hour_salary">Часовой оклад, руб</string>
+    <string name="add_task">Добавить задачу</string>
+    <string name="add_project">Добавьте проект</string>
+    <string name="project_info">Информация о проекте</string>
+    <string name="project_departments">Подразделения:</string>
+    <string name="project_tasks">Задачи:</string>
+    <string name="choose_department">Выберите подразделение</string>
+    <string name="choose_contract">Выберите контракт</string>
+    <string name="employees_with_task">Сотудники, выполняющие задачу</string>
+    <string name="input_last_name">Введите фамилию сотрудника</string>
+    <string name="description">"Описание "</string>
+    <string name="workspace">Присвоить рабочее место</string>
+    <string name="choose_equipment">Есть компьютер</string>
+    <string name="email">Email (необязательно)</string>
+    <string name="password">Пароль (необязательно)</string>
+    <string name="fiil_in_all_fields">Заполните все поля!</string>
+    <string name="incorrect_age">Возраст сотрудника не должен превышать 65 лет и должен быть не ниже 18 лет</string>
+    <string name="incorrect_age_format">Неверный формат возраста!</string>
+    <string name="incorrect_duration_format">Некорректный формат ввода данных (\"Длительность\")</string>
+
+</resources>
