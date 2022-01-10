@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="offset">8dp</dimen>
+    <dimen name="offset_big">80dp</dimen>
+    <dimen name="text_size">24sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="video_preview_height">100dp</dimen>
+    <dimen name="video_preview_width">150dp</dimen>
+    <dimen name="padding">16dp</dimen>
+
+</resources>

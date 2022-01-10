@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/padding"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/videoPreviewImageView"
+        android:layout_width="@dimen/video_preview_width"
+        android:layout_height="@dimen/video_preview_height"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/videoTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        tools:text="Video_0001"
+        app:layout_constraintStart_toEndOf="@id/videoPreviewImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/offset"
+        android:layout_marginBottom="@dimen/offset"/>
+
+    <TextView
+        android:id="@+id/videoSizeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        tools:text="256 Mb"
+        app:layout_constraintStart_toEndOf="@id/videoPreviewImageView"
+        app:layout_constraintTop_toBottomOf="@id/videoTitleTextView"
+        android:layout_marginStart="@dimen/offset"/>
+
+    <ImageButton
+        android:id="@+id/trashButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/offset"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/ic_delete_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoSizeTextView" />
+
+    <ImageButton
+        android:id="@+id/favoriteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/offset"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/not_in_favorites"
+        android:src="@drawable/ic_favorite_border_24_gray"
+        app:layout_constraintEnd_toStartOf="@id/trashButton"
+        app:layout_constraintTop_toBottomOf="@+id/videoSizeTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
