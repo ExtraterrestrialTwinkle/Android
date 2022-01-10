@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">File Downloader</string>
+    <string name="enter_url">Введите url файла</string>
+    <string name="file_download">Скачать файл</string>
+    <string name="await_for_downloading">Ожидание загрузки файла…</string>
+    <string name="cancel">Отменить</string>
+    <string name="pause">Pause</string>
+</resources>
