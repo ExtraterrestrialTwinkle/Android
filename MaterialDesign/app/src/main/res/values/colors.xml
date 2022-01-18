@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bluegray_200">#99f5f5f5</color>
+    <color name="bluegray_500">#FF78909c</color>
+    <color name="bluegray_700">#FF37474f</color>
+    <color name="turquoise_200">#FF62ebff</color>
+    <color name="turquoise_500">#FF00b8d4</color>
+    <color name="turquoise_700">#FF0088a3</color>
+    <color name="blue_500">#FF1a237e</color>
+    <color name="blue_200">#FFe3f2fd</color>
+    <color name="gray">#FF212121</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
